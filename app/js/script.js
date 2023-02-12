@@ -26,3 +26,49 @@ $('#myTab button').on('click', function (event) {
    event.preventDefault()
    $(this).tab('show')
  })
+
+ $('.toast').toast({autohide: false});
+
+ $('#liveToastBtn').on('click', function() {
+   $('#liveToast').toast('show');
+ })
+
+ $('#closeToastBtn').on('click', function() {
+   $('#liveToast').toast('hide');
+ }) 
+
+ var clipboard = new ClipboardJS('#copyToastBtn');
+
+ $('#copyToastBtn').tooltip({delay: { "show": 500, "hide": 100 }});
+
+ $('#copyToastBtn').on('click', function() {
+   clipboard.on('success', function(e) {
+     
+      $('#copyToastBtn').attr("title", "Copied!")
+      .tooltip("_fixTitle")
+      .tooltip("show")
+      .attr("title", "Copy to clipboard")
+      .tooltip("_fixTitle");
+
+      e.clearSelection();
+   });
+ });
+
+ $('.refs').on('click', function() {
+   $('#liveToast').toast('show');
+ });
+
+
+
+// clipboard.on('success', function(e) {
+//     console.info('Action:', e.action);
+//     console.info('Text:', e.text);
+//     console.info('Trigger:', e.trigger);
+
+//     e.clearSelection();
+// });
+
+// clipboard.on('error', function(e) {
+//     console.error('Action:', e.action);
+//     console.error('Trigger:', e.trigger);
+// });

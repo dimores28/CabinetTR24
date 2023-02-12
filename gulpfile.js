@@ -14,6 +14,7 @@ const imagPngquant = require('imagemin-pngquant'); // Подключаем би�
 
 const jsFile =['app/lib/jquery-3.3.1.min.js', 
 'app/lib/bootstrap.bundle.min.js',
+'app/lib/clipboard.min.js',
 'app/js/script.js'
 ];
 
