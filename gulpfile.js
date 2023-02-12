@@ -81,9 +81,11 @@ gulp.task('img', function() {
 gulp.task('prebuild', async function() {
 
 	var buildCss = gulp.src( // Переносим библиотеки в продакшен
-		'app/css/main.min.css'
-		)
-	.pipe(gulp.dest('dist/css'))
+		'app/css/main.min.css')
+	.pipe(gulp.dest('dist/css'));
+
+	var buildBotstrapCss = gulp.src('app/css/bootstrap.min.css')
+	.pipe(gulp.dest('dist/css'));
 
 	var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
 	.pipe(gulp.dest('dist/fonts'))
