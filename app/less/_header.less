@@ -15,6 +15,30 @@
    display: none;
 }
 
+.profile-linck {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .burger {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: -14px;
+    right: 16px;
+  }
+
+  .profile-linck {
+    display: block;
+    color: #fff;
+    margin-right: 70px;
+  }
+
+  .header-bignav {
+    display: none;
+  }
+}
+
 .navbar-heading {
    font-size: .75rem;
    padding-top: .25rem;
@@ -90,6 +114,7 @@
 
    .burger {
       transform: scale(85%);
-      left: 12px;
+      top: -10px;
+      right: 12px;
    }
 }

@@ -53,9 +53,10 @@
 
     .aside {
       position: absolute;
-      top: 64px;
+      top: 74px;
       left: 0;
-      z-index: 12;
+      padding: 10px 20px;
+      z-index: 35;
       transform: translateX(-100%);
       transition: all 0.6s ease-in;
       background: #fff;
@@ -63,15 +64,6 @@
 
     .naw-show {
       transform: translateX(0);
-    }
-
-
-    .burger {
-      display: block;
-      position: absolute;
-      z-index: 10;
-      top: -18px;
-      left: 16px;
     }
 }
 
@@ -88,6 +80,12 @@
 
 .toast-text {
   width: 246px;
+}
+
+@media (max-width: 368px) {
+  .toast-text {
+    width: 230px;
+  }
 }
 
 .logo-link {
