@@ -58,8 +58,6 @@ $('#myTab button').on('click', function (event) {
    $('#liveToast').toast('show');
  });
 
-
-
 // clipboard.on('success', function(e) {
 //     console.info('Action:', e.action);
 //     console.info('Text:', e.text);
@@ -112,7 +110,7 @@ $('#depositModalBtn').on('click', function() {
                       <input type="number" class="form-control" id="amountMoney" placeholder="Enter 1-1468950">
                     </div>
                   </div>
-                  <button type="button" class="btn btn-warning mt-4">Are you problems?</button>
+                  <button type="button" id="problemsBtn" class="btn btn-warning mt-4">Are you problems?</button>
                 </div>`;
 
   $('.modal-form').html(content);
@@ -157,7 +155,7 @@ $('#openDepositModal').on('click', function() {
                       <input type="number" class="form-control" id="amountMoney" placeholder="Enter 1-1468950">
                     </div>
                   </div>
-                  <button type="button" class="btn btn-warning mt-4">Are you problems?</button>
+                  <button type="button" id="problemsBtn" class="btn btn-warning mt-4">Are you problems?</button>
                 </div>`;
 
   $('.modal-form').html(content);
@@ -219,7 +217,69 @@ $('#withdrawalModalBtn').on('click', function() {
         <button type="button" class="btn btn-primary">Send</button>
       </div>
     </div>
-    <button type="button" class="btn btn-warning mt-4">Are you problems?</button>
+    <button type="button" id="problemsBtn" class="btn btn-warning mt-4">Are you problems?</button>
+  </div>`;
+
+  $('.modal-form').html(content);
+});
+
+$('#openWithdrawalModal').on('click', function() {
+  let content = 
+  `<div class="modal-content p-3">
+    <h4>
+      Wallet balance: 
+      <span class="text-muted">100$</span>
+    </h4>
+    <div>
+      <p class="mt-1">
+        Select currency
+      </p>
+      <div>
+        <div class="form-row align-items-center">
+          <div class="col-auto my-1">
+            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+              <option selected>USDT <small class="text-muted">Tether</small></option>
+              <option value="1">ETH <small class="text-muted">Erhereum</small></option>
+              <option value="2">BTC <small class="text-muted">Bitcoin</small></option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            TRC20
+          </label>
+        </div>
+        <div class="form-check mt-2">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" disabled>
+          <label class="form-check-label" for="exampleRadios2">
+            Visa/MasterCard
+          </label>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <div class="form-group">
+          <label for="walletAddress">Wallet address</label>
+          <input type="text" class="form-control" id="walletAddress" aria-describedby="walletlHelp">
+          <small id="walletlHelp" class="form-text text-muted">Enter wallet address TRC20</small>
+        </div>
+        <button type="button" class="btn btn-primary">Confirm</button>
+      </div>
+
+      <div class="mt-4">
+        <div class="form-group">
+          <label for="emailCode">Code on mail</label>
+          <input type="number" class="form-control" id="emailCode" placeholder="Please enter confirmation code">
+        </div>
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+    <button type="button" id="problemsBtn" class="btn btn-warning mt-4">Are you problems?</button>
   </div>`;
 
   $('.modal-form').html(content);
@@ -232,6 +292,55 @@ $('#balanceNavBtn').on('click', function() {
       Wallet balance: 
       <span class="text-muted">100$</span>
     </h4>
+  </div>`;
+
+  $('.modal-form').html(content);
+});
+
+$('#transactionsModalBtn').on('click', function() {
+  let content = 
+  `<div class="modal-content p-3">
+    <h4>
+      Wallet balance: 
+      <span class="text-muted">100$</span>
+    </h4>
+
+    <div class="mt-4 transactions">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Date</th>
+            <th scope="col">Transactions</th>
+            <th scope="col">Number coins</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>10$</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>100$</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>310$</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>`;
 
   $('.modal-form').html(content);
