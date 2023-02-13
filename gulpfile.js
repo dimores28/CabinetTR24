@@ -10,6 +10,7 @@ const autoprefixer = require('gulp-autoprefixer'); // Подключаем би�
 const cache        = require('gulp-cache'); // Подключаем библиотеку кеширования
 const imagemin     = require('gulp-imagemin'); // Подключаем библиотеку для работы с изображениями
 const imagPngquant = require('imagemin-pngquant'); // Подключаем библиотеку для работы с png
+const sourcemaps   = require('gulp-sourcemaps');
 
 
 const jsFile =['app/lib/jquery-3.3.1.min.js', 
@@ -20,12 +21,14 @@ const jsFile =['app/lib/jquery-3.3.1.min.js',
 
 gulp.task('less', function() {
 	return gulp.src('app/less/**/*.less') // Берем источник
+		   .pipe(sourcemaps.init({largeFile: true}))
 	       .pipe(less ())// Преобразуем less в CSS посредством gulp-less
 	       .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
             .pipe(cleanCSS({
                 level: 2
            }))
            .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
+		   .pipe(sourcemaps.write('../maps', {addComment: true}))
 	       .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
 	       .pipe(browserSync.reload({stream: true})); // Обновляем CSS на странице при изменении
 });
@@ -43,10 +46,12 @@ gulp.task('browser-sync', function() {
 
 gulp.task('scripts', function() {
     return gulp.src(jsFile)
+	    .pipe(sourcemaps.init({largeFile: true}))
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify({
             toplevel: true
         })) // Сжимаем JS файл
+		.pipe(sourcemaps.write('../maps', {addComment: true}))
         .pipe(gulp.dest('app/js')) // Выгружаем в папку app/js
         .pipe(browserSync.stream()); //перезагружаем страницу
 });
