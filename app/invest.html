@@ -122,7 +122,7 @@
                   <tbody>
                      <tr>
                         <th scope="row">
-                           <a href="#">
+                           <a href="#" data-toggle="modal" data-target="#exampleModalLg">
                               id423
                            </a>
                         </th>
@@ -140,7 +140,11 @@
                         </td>
                      </tr>
                      <tr>
-                        <th scope="row"><a href="#">id523</a></th>
+                        <th scope="row">
+                           <a href="#" data-toggle="modal" data-target="#exampleModalLg">
+                              id523
+                           </a>
+                        </th>
                         <td>5000$</td>
                         <td>12.01.22</td>
                         <td>
@@ -155,7 +159,11 @@
                         </td>
                      </tr>
                      <tr>
-                        <th scope="row"><a href="#">id4521</a></th>
+                        <th scope="row">
+                           <a href="#" data-toggle="modal" data-target="#exampleModalLg">
+                              id4521
+                           </a>
+                        </th>
                         <td>15000$</td>
                         <td>14.12.22</td>
                         <td>
@@ -320,25 +328,50 @@
 </div>
 
 <!-- Large modal -->
-<div class="modal-dialog modal-lg" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel">
-   <div class="modal-content">
-      <div class="modal-header">
-         <h5 class="modal-title">More about investments</h5>
-         <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-         >
-            <span aria-hidden="true">&times;</span>
+<div class="modal fade show" id="exampleModalLg" tabindex="-1" aria-labelledby="exampleModalLg" aria-modal="true" role="dialog">
+   <div class="modal-dialog modal-lg">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title h4" id="exampleModalLg">More about investments</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">×</span>
          </button>
-      </div>
-
-      <div class="modal-body">
-         <div class="modal-content p-3">
-
+       </div>
+       <div class="modal-body">
+         <div class="modal-content more-invest p-3">
+            <table class="table">
+               <thead>
+                 <tr>
+                   <th scope="col">id</th>
+                   <th scope="col">Investment amount</th>
+                   <th scope="col">Date</th>
+                   <th scope="col">More information</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">id423</th>
+                   <td>100$</td>
+                   <td>20.02.23</td>
+                   <td>More info</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">id423</th>
+                   <td>500$</td>
+                   <td>12.01.22</td>
+                   <td>More info</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">id423</th>
+                   <td>1500$</td>
+                   <td>14.12.22</td>
+                   <td>More info</td>
+                 </tr>
+               </tbody>
+             </table>
          </div>
-      </div>
+       </div>
+     </div>
    </div>
 </div>
 
