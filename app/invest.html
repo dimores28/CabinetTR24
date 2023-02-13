@@ -1,0 +1,284 @@
+<div class="main-alerts">
+   <div class="container substrate">
+      <p class="h1 mt-5">Investing</p>
+      <div class="row">
+         <div class="col-xl-5 col-md-6 col-sm-12">
+            <div class="investment-column">
+               <p class="h3">Balance: <span class="text-muted">0.00 $</span></p>
+               <div class="mt-4">
+                  <div class="form-group">
+                     <label for="investmentAmount">Investment amount</label>
+                     <input
+                        type="number"
+                        min="0"
+                        class="form-control"
+                        id="investmentAmount"
+                        placeholder="0.00"
+                     />
+                  </div>
+                  <button
+                     type="button"
+                     class="btn btn-primary mb-2"
+                     style="width: 159px"
+                  >
+                     Confirm
+                  </button>
+                  <button
+                     type="button"
+                     id="problemsBtn"
+                     class="btn btn-warning mb-2"
+                  >
+                     Are you problems?
+                  </button>
+               </div>
+            </div>
+         </div>
+         <div class="col-xl-7 col-md-6 col-sm-12 mt-4">
+            <div class="invest-video mt-4">
+               <video
+                  poster="video/maxresdefault.jpg"
+                  autoplay="autoplay"
+                  loop="loop"
+                  controls="controls"
+                  muted="muted"
+                  playsinline=""
+                  tabindex="0"
+                  width="100%"
+                  height="100%"
+                  class="video"
+               >
+                  <source
+                     src="video/videoplayback.mp4"
+                     type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+                  />
+                  <source
+                     src="video/videoplayback.3gpp"
+                     type='video/3gpp; codecs="mp4v.20.8, samr"'
+                  />
+               </video>
+            </div>
+            <div>
+               <p class="mt-3" role="alert">Choose voice acting</p>
+               <div>
+                  <button type="button" class="btn btn-dark btn-sm voice-btn">
+                     eng
+                  </button>
+                  <button type="button" class="btn btn-dark btn-sm voice-btn">
+                     ru
+                  </button>
+                  <button type="button" class="btn btn-dark btn-sm voice-btn">
+                     中國人
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="mt-5">
+         <ul class="nav nav-tabs" id="investTab" role="tablist">
+            <li class="nav-item">
+               <a
+                  class="nav-link active"
+                  id="invest-tab"
+                  data-toggle="tab"
+                  href="#invest"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+               >
+                  Open invest
+               </a>
+            </li>
+            <li class="nav-item">
+               <a
+                  class="nav-link"
+                  id="history-tab"
+                  data-toggle="tab"
+                  href="#history"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+               >
+                  History profit
+               </a>
+            </li>
+         </ul>
+         <div class="tab-content" id="investTabContent">
+            <div
+               class="investment-table p-1 tab-pane fade show active"
+               id="invest"
+               role="tabpanel"
+               aria-labelledby="invest-tab"
+            >
+               <table class="table">
+                  <thead>
+                     <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Balance</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Handle</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <th scope="row"><a href="#">id423</a></th>
+                        <td>100$</td>
+                        <td>20.02.23</td>
+                        <td>
+                           <button
+                              type="button"
+                              class="btn btn-dark btn-sm"
+                              data-toggle="modal"
+                              data-target="#exampleModal"
+                           >
+                              Close invest
+                           </button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><a href="#">id523</a></th>
+                        <td>5000$</td>
+                        <td>12.01.22</td>
+                        <td>
+                           <button type="button" class="btn btn-dark btn-sm">
+                              Close invest
+                           </button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><a href="#">id4521</a></th>
+                        <td>15000$</td>
+                        <td>14.12.22</td>
+                        <td>
+                           <button type="button" class="btn btn-dark btn-sm">
+                              Close invest
+                           </button>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <button type="button" class="btn btn-primary mt-2">
+                  View all
+               </button>
+            </div>
+            <div
+               class="history-table tab-pane p-1 fade"
+               id="history"
+               role="tabpanel"
+               aria-labelledby="history-tab"
+            >
+               <table class="table">
+                  <thead>
+                     <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Sum</th>
+                        <th scope="col">Date</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <th scope="row">1</th>
+                        <td>23$</td>
+                        <td>01.12.2023</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">2</th>
+                        <td>52$</td>
+                        <td>02.03.2024</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <button type="button" class="btn btn-primary mt-2">
+                  View all
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<script>
+   $('#investTab #invest').tab('show');
+
+   $('#investTabContent a').on('click', function (e) {
+      e.preventDefault();
+   });
+
+   $('#investTabContent button').on('click', function (e) {
+      let content = `<div class="modal-content p-3">
+      <div>
+         <button
+            type="button"
+            class="btn btn-dark btn-sm my-1 mt-1"
+            style="width: 54px"
+         >
+            10%
+         </button>
+         <button
+            type="button"
+            class="btn btn-dark btn-sm my-1 mt-1"
+            style="width: 54px"
+         >
+            25%
+         </button>
+         <button
+            type="button"
+            class="btn btn-dark btn-sm my-1 mt-1"
+            style="width: 54px"
+         >
+            50%
+         </button>
+         <button
+            type="button"
+            class="btn btn-dark btn-sm my-1 mt-1"
+            style="width: 54px"
+         >
+            75%
+         </button>
+         <button
+            type="button"
+            class="btn btn-dark btn-sm my-1 mt-1"
+            style="width: 54px"
+         >
+            100%
+         </button>
+      </div>
+
+      <div class="form-inline mt-4">
+         <div class="form-group mb-2">
+            <label for="emailConfirmationCode" class="sr-only"
+               >Confirmation code</label
+            >
+            <input
+               type="text"
+               class="form-control"
+               id="emailConfirmationCode"
+               placeholder=""
+            />
+         </div>
+         <button type="submit" class="btn btn-primary mb-2 ml-1">Confirm</button>
+      </div>
+
+      <div class="form-inline mt-2">
+         <div class="form-group mb-2">
+            <label for="googleAuthenticationCode" class="sr-only"
+               >Google authentication code</label
+            >
+            <input
+               type="text"
+               class="form-control"
+               id="googleAuthenticationCode"
+               placeholder=""
+            />
+         </div>
+         <button type="submit" class="btn btn-primary mb-2 ml-1">Confirm</button>
+      </div>
+
+      <button type="button" id="problemsBtn" class="btn btn-warning mt-4">
+         Are you problems?
+      </button>
+   </div>`;
+
+      $('.modal-form').html(content);
+   });
+</script>

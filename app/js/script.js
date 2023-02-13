@@ -19,6 +19,13 @@ $('#burgerBtn').on('click', function () {
    $('.aside').toggleClass('naw-show');
 });
 
+// $('body').on('click', function() {
+//   if($('.aside').hasClass('naw-show')) {
+//     $(this).toggleClass('opened');
+//     $('.aside').toggleClass('naw-show');
+//   }
+// });
+
 $('#myTab li:last-child button').tab('show');
 
 
@@ -71,9 +78,17 @@ $('#myTab button').on('click', function (event) {
 //     console.error('Trigger:', e.trigger);
 // });
 
+
 $('#depositModalBtn').on('click', function() {
   let content = `<div class="modal-content p-3">
+                    <h4>
+                      Wallet balance: 
+                      <span class="text-muted">100$</span>
+                    </h4>
                   <div>
+                    <p class="mt-1">
+                      Select currency
+                    </p>
                     <div class="form-row align-items-center">
                       <div class="col-auto my-1">
                         <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
@@ -118,7 +133,14 @@ $('#depositModalBtn').on('click', function() {
 
 $('#openDepositModal').on('click', function() {
   let content = `<div class="modal-content p-3">
-                  <div>
+                    <h4>
+                      Wallet balance: 
+                      <span class="text-muted">100$</span>
+                    </h4>
+                    <div>
+                    <p class="mt-1">
+                      Select currency
+                    </p>
                     <div class="form-row align-items-center">
                       <div class="col-auto my-1">
                         <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
