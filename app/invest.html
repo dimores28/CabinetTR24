@@ -129,7 +129,7 @@
                               type="button"
                               class="btn btn-dark btn-sm"
                               data-toggle="modal"
-                              data-target="#exampleModal"
+                              data-target=".bd-example-modal-sm"
                            >
                               Close invest
                            </button>
@@ -140,7 +140,12 @@
                         <td>5000$</td>
                         <td>12.01.22</td>
                         <td>
-                           <button type="button" class="btn btn-dark btn-sm">
+                           <button
+                              type="button"
+                              class="btn btn-dark btn-sm"
+                              data-toggle="modal"
+                              data-target=".bd-example-modal-sm"
+                           >
                               Close invest
                            </button>
                         </td>
@@ -150,7 +155,12 @@
                         <td>15000$</td>
                         <td>14.12.22</td>
                         <td>
-                           <button type="button" class="btn btn-dark btn-sm">
+                           <button
+                              type="button"
+                              class="btn btn-dark btn-sm"
+                              data-toggle="modal"
+                              data-target=".bd-example-modal-sm"
+                           >
                               Close invest
                            </button>
                         </td>
@@ -197,88 +207,118 @@
    </div>
 </div>
 
+<!-- Small modal -->
+<div
+   class="modal fade bd-example-modal-sm"
+   tabindex="-1"
+   role="dialog"
+   aria-labelledby="mySmallModalLabel"
+   aria-hidden="true"
+>
+   <div class="modal-dialog small-modal">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Balance</h5>
+            <button
+               type="button"
+               class="close"
+               data-dismiss="modal"
+               aria-label="Close"
+            >
+               <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="modal-body">
+            <div class="modal-content p-3">
+               <div>
+                  <button
+                     type="button"
+                     class="btn btn-dark btn-sm my-1 mt-1"
+                     style="width: 54px"
+                  >
+                     10%
+                  </button>
+                  <button
+                     type="button"
+                     class="btn btn-dark btn-sm my-1 mt-1"
+                     style="width: 54px"
+                  >
+                     25%
+                  </button>
+                  <button
+                     type="button"
+                     class="btn btn-dark btn-sm my-1 mt-1"
+                     style="width: 54px"
+                  >
+                     50%
+                  </button>
+                  <button
+                     type="button"
+                     class="btn btn-dark btn-sm my-1 mt-1"
+                     style="width: 54px"
+                  >
+                     75%
+                  </button>
+                  <button
+                     type="button"
+                     class="btn btn-dark btn-sm my-1 mt-1"
+                     style="width: 54px"
+                  >
+                     100%
+                  </button>
+               </div>
+
+               <div class="form-inline mt-4">
+                  <div class="form-group mb-2">
+                     <label for="emailConfirmationCode" class="sr-only"
+                        >Confirmation code</label
+                     >
+                     <input
+                        type="text"
+                        class="form-control"
+                        id="emailConfirmationCode"
+                        placeholder="Confirmation code"
+                     />
+                  </div>
+                  <button type="submit" class="btn btn-primary mb-2 ml-1">
+                     Confirm
+                  </button>
+               </div>
+
+               <div class="form-inline mt-2">
+                  <div class="form-group mb-2">
+                     <label for="googleAuthenticationCode" class="sr-only"
+                        >Google authentication code</label
+                     >
+                     <input
+                        type="text"
+                        class="form-control"
+                        id="googleAuthenticationCode"
+                        placeholder="Google authentication"
+                     />
+                  </div>
+                  <button type="submit" class="btn btn-primary mb-2 ml-1">
+                     Confirm
+                  </button>
+               </div>
+
+               <button
+                  type="button"
+                  id="problemsBtn"
+                  class="btn btn-warning mt-4"
+               >
+                  Are you problems?
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
 <script>
    $('#investTab #invest').tab('show');
 
    $('#investTabContent a').on('click', function (e) {
       e.preventDefault();
-   });
-
-   $('#investTabContent button').on('click', function (e) {
-      let content = `<div class="modal-content p-3">
-      <div>
-         <button
-            type="button"
-            class="btn btn-dark btn-sm my-1 mt-1"
-            style="width: 54px"
-         >
-            10%
-         </button>
-         <button
-            type="button"
-            class="btn btn-dark btn-sm my-1 mt-1"
-            style="width: 54px"
-         >
-            25%
-         </button>
-         <button
-            type="button"
-            class="btn btn-dark btn-sm my-1 mt-1"
-            style="width: 54px"
-         >
-            50%
-         </button>
-         <button
-            type="button"
-            class="btn btn-dark btn-sm my-1 mt-1"
-            style="width: 54px"
-         >
-            75%
-         </button>
-         <button
-            type="button"
-            class="btn btn-dark btn-sm my-1 mt-1"
-            style="width: 54px"
-         >
-            100%
-         </button>
-      </div>
-
-      <div class="form-inline mt-4">
-         <div class="form-group mb-2">
-            <label for="emailConfirmationCode" class="sr-only"
-               >Confirmation code</label
-            >
-            <input
-               type="text"
-               class="form-control"
-               id="emailConfirmationCode"
-               placeholder=""
-            />
-         </div>
-         <button type="submit" class="btn btn-primary mb-2 ml-1">Confirm</button>
-      </div>
-
-      <div class="form-inline mt-2">
-         <div class="form-group mb-2">
-            <label for="googleAuthenticationCode" class="sr-only"
-               >Google authentication code</label
-            >
-            <input
-               type="text"
-               class="form-control"
-               id="googleAuthenticationCode"
-               placeholder=""
-            />
-         </div>
-         <button type="submit" class="btn btn-primary mb-2 ml-1">Confirm</button>
-      </div>
-
-      <button type="button" id="problemsBtn" class="btn btn-warning mt-4">
-         Are you problems?
-      </button>
-   </div>`;
-
-      $('.modal-form').html(content);
    });
 </script>
