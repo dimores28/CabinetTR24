@@ -1,10 +1,145 @@
 <div class="main-alerts">
    <div class="container substrate">
-      <p class="h1 mt-5">
-         Statistics
-      </p>
+      <p class="h1 mt-5">Statistics</p>
 
+      <div class="row mt-5">
+         <div class="col-xl-8 col-sm-12 mb-4">
+            <div class="filteers">
+               <div class="filteers__group-btn">
+                  <span class="filteers__label mr-3">Date:</span>
+                  <button type="button" class="btn btn-dark filteers__btn">
+                     7d
+                  </button>
+                  <button type="button" class="btn btn-dark filteers__btn">
+                     30d
+                  </button>
+                  <button type="button" class="btn btn-dark filteers__btn">
+                     90d
+                  </button>
+                  <button
+                     type="button"
+                     class="btn btn-dark filteers__settings-btn"
+                  >
+                     Settings
+                  </button>
+               </div>
+            </div>
+         </div>
 
-      
+         <div class="col-xl-4 col-md-6 col-sm-8 mb-4">
+            <h4 class="substrate p-4 my-profit">
+               All my profit:
+               <span class="text-muted">5012$</span>
+            </h4>
+         </div>
+      </div>
+
+      <div class="mt-5">
+         <ul class="nav nav-tabs" id="statisticsTab" role="tablist">
+            <li class="nav-item">
+               <a
+                  class="nav-link active"
+                  id="partners-tab"
+                  data-toggle="tab"
+                  href="#partners"
+                  role="tab"
+                  aria-controls="partners"
+                  aria-selected="true"
+                  >Partners</a
+               >
+            </li>
+            <li class="nav-item">
+               <a
+                  class="nav-link"
+                  id="invest-tab"
+                  data-toggle="tab"
+                  href="#invest"
+                  role="tab"
+                  aria-controls="invest"
+                  aria-selected="false"
+                  >Invest</a
+               >
+            </li>
+            <li class="nav-item">
+               <a
+                  class="nav-link"
+                  id="depositWithdrawal-tab"
+                  data-toggle="tab"
+                  href="#depositWithdrawal"
+                  role="tab"
+                  aria-controls="depositWithdrawal"
+                  aria-selected="false"
+                  >Deposit/Withdrawal</a
+               >
+            </li>
+         </ul>
+         <div class="tab-content" id="statisticsTabContent">
+            <div
+               class="tab-pane fade show active"
+               id="partners"
+               role="tabpanel"
+               aria-labelledby="partners-tab"
+            >
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <th scope="row">Turnover 1st line</th>
+                        <td>5000$</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">Turnover all partners</th>
+                        <td>50000$</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">My profit partners</th>
+                        <td>900$</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div
+               class="tab-pane fade"
+               id="invest"
+               role="tabpanel"
+               aria-labelledby="invest-tab"
+            >
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <th scope="row">My invest all</th>
+                        <td>100$</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">Profit my invest</th>
+                        <td>5000$</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div
+               class="tab-pane fade"
+               id="depositWithdrawal"
+               role="tabpanel"
+               aria-labelledby="depositWithdrawal-tab"
+            >
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <th scope="row">Deposit</th>
+                        <td>100$</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">Withdrawal</th>
+                        <td>5000$</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
    </div>
 </div>
+
+<script>
+   $('#statisticsTab #partners').tab('show');
+</script>
