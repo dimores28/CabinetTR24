@@ -121,7 +121,7 @@ $('#depositModalBtn').on('click', function() {
                       <small id="walletlHelp" class="form-text text-muted">Enter wallet address TRC20</small>
                     </div>
                     <div class="form-group">
-                      <label for="amountMoney">Number</label>
+                      <label for="amountMoney">Total</label>
                       <input type="number" class="form-control" id="amountMoney" placeholder="Enter 1-1468950">
                     </div>
                   </div>
@@ -173,7 +173,7 @@ $('#openDepositModal').on('click', function() {
                       <small id="walletlHelp" class="form-text text-muted">Enter wallet address TRC20</small>
                     </div>
                     <div class="form-group">
-                      <label for="amountMoney">Number</label>
+                      <label for="amountMoney">Total</label>
                       <input type="number" class="form-control" id="amountMoney" placeholder="Enter 1-1468950">
                     </div>
                   </div>
@@ -220,6 +220,11 @@ $('#withdrawalModalBtn').on('click', function() {
             Visa/MasterCard
           </label>
         </div>
+      </div>
+
+      <div class="form-group mt-4">
+        <label for="amountMoney">Total</label>
+        <input type="number" class="form-control" id="amountMoney" placeholder="Enter 1-1468950">
       </div>
 
       <div class="mt-4">
@@ -282,6 +287,11 @@ $('#openWithdrawalModal').on('click', function() {
             Visa/MasterCard
           </label>
         </div>
+      </div>
+
+      <div class="form-group mt-4">
+        <label for="amountMoney">Total</label>
+        <input type="number" class="form-control" id="amountMoney" placeholder="Enter 1-1468950">
       </div>
 
       <div class="mt-4">
