@@ -4,7 +4,285 @@
          Transactions
       </p>
 
+      <div>
+         <div class="filters-operation-typp mb-4 mt-5">
+            <button type="button" class="btn btn-primary mb-1">Deposit</button>
+            <button type="button" class="btn btn-primary mb-1">Withdrawal</button>
+            <button type="button" class="btn btn-primary mb-1">Buy invest</button>
+            <button type="button" class="btn btn-primary mb-1">Invest profit</button>
+            <button type="button" class="btn btn-primary mb-1">Close invest</button>
+            <button type="button" class="btn btn-primary mb-1">Partners profit</button>
+         </div>
+         <div class="filters-data">
+           <button type="button" class="btn btn-primary mb-1">7d</button>
+           <button type="button" class="btn btn-primary mb-1">30d</button>
+           <button type="button" class="btn btn-primary mb-1">90d</button>
+           <button type="button" class="btn btn-primary mb-1">All</button>
+           <button type="button" class="btn btn-primary mb-1">Settings</button>
+         </div>
+      </div>
 
+      <nav class="mt-5">
+         <div class="nav nav-tabs" id="nav-tab" role="tablist">
+           <button class="nav-link active" id="nav-deposit-tab" data-toggle="tab" data-target="#nav-deposit" type="button" role="tab" aria-controls="nav-deposit" aria-selected="true">Deposit</button>
+           <button class="nav-link" id="nav-withdrawal-tab" data-toggle="tab" data-target="#nav-withdrawal" type="button" role="tab" aria-controls="nav-withdrawal" aria-selected="false">Withdrawal</button>
+           <button class="nav-link" id="nav-profitpartners-tab" data-toggle="tab" data-target="#nav-profitpartners" type="button" role="tab" aria-controls="nav-profitpartners" aria-selected="false">Profit partners</button>
+           <button class="nav-link" id="nav-buyinvest-tab" data-toggle="tab" data-target="#nav-buyinvest" type="button" role="tab" aria-controls="nav-buyinvest" aria-selected="true">Buy invest</button>
+           <button class="nav-link" id="nav-closeinvest-tab" data-toggle="tab" data-target="#nav-closeinvest" type="button" role="tab" aria-controls="nav-closeinvest" aria-selected="false">Close invest</button>
+           <button class="nav-link" id="nav-profitinvest-tab" data-toggle="tab" data-target="#nav-profitinvest" type="button" role="tab" aria-controls="nav-profitinvest" aria-selected="false">Profit invest</button>
+         </div>
+       </nav>
+       <div class="tab-content" id="nav-tabContent">
+         <div class="tab-pane fade show active" id="nav-deposit" role="tabpanel" aria-labelledby="nav-deposit-tab">
+            <table class="table">
+               <thead>
+                 <tr>
+                   <th scope="col">Payment method;</th>
+                   <th scope="col">Total</th>
+                   <th scope="col">Date</th>
+                   <th scope="col">Status</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">USDT TRC</th>
+                   <td>20$</td>
+                   <td>01.11.23</td>
+                   <td>confirm</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">BTC</th>
+                   <td>100$</td>
+                   <td>01.11.23</td>
+                   <td>canceled</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Visa/MasterCard</th>
+                   <td>4000$</td>
+                   <td>01.11.23</td>
+                   <td>panding</td>
+                 </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="tab-pane fade" id="nav-withdrawal" role="tabpanel" aria-labelledby="nav-withdrawal-tab">
+            <table class="table">
+               <thead>
+                 <tr>
+                   <th scope="col">Payment method;</th>
+                   <th scope="col">Total</th>
+                   <th scope="col">Date</th>
+                   <th scope="col">Status</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">USDT TRC</th>
+                   <td>20$</td>
+                   <td>01.11.23</td>
+                   <td>confirm</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">BTC</th>
+                   <td>100$</td>
+                   <td>01.11.23</td>
+                   <td>canceled</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">Visa/MasterCard</th>
+                   <td>4000$</td>
+                   <td>01.11.23</td>
+                   <td>panding</td>
+                 </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="tab-pane fade" id="nav-profitpartners" role="tabpanel" aria-labelledby="nav-profitpartners-tab">
+            <table class="table">
+               <thead>
+                 <tr>
+                   <th scope="col">Mail</th>
+                   <th scope="col">Total invest</th>
+                   <th scope="col">Total profi</th>
+                   <th scope="col">My profit</th>
+                   <th scope="col">Date start</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">
+                     <a href="#">
+                        svetastr@ya.ru
+                     </a>
+                   </th>
+                   <td>500$</td>
+                   <td>145$</td>
+                   <td>29$</td>
+                   <td>12.01.22</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">
+                     <a href="#">
+                        sd@gmail.com
+                     </a>
+                   </th>
+                   <td>100$</td>
+                   <td>54$</td>
+                   <td>10.8$</td>
+                   <td>01.12.23</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">
+                     <a href="#">
+                        23bst@mail.ru
+                     </a>
+                   </th>
+                   <td>4000$</td>
+                   <td>1100$</td>
+                   <td>220$</td>
+                   <td>01.11.23</td>
+                 </tr>
+               </tbody>
+             </table>
+         </div>
+         <div class="tab-pane fade show" id="nav-buyinvest" role="tabpanel" aria-labelledby="nav-buyinvest-tab">
+            <h4><a href="#">id423</a></h4>
+            <table class="table">
+               <thead>
+                 <tr>
+                   <th scope="col">Total USD</th>
+                   <th scope="col">Open date</th>
+                   <th scope="col">My profit $</th>
+                   <th scope="col">Close date</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">500$</th>
+                   <td>01.12.2023 </td>
+                   <td>214$</td>
+                   <td>01.05.2024</td>
+                 </tr>
+               </tbody>
+            </table>
+
+            <h4><a href="#">id484</a></h4>
+            <table class="table">
+               <thead>
+                 <tr>
+                   <th scope="col">Total USD</th>
+                   <th scope="col">Open date</th>
+                   <th scope="col">My profit $</th>
+                   <th scope="col">Close date</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">2000$</th>
+                   <td>01.12.2023</td>
+                   <td>900$</td>
+                   <td></td>
+                 </tr>
+               </tbody>
+            </table>
+
+            <h4><a href="#">id516</a></h4>
+            <table class="table">
+               <thead>
+                 <tr>
+                   <th scope="col">Total USD</th>
+                   <th scope="col">Open date</th>
+                   <th scope="col">My profit $</th>
+                   <th scope="col">Close date</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">5000$</th>
+                   <td>01.03.2024</td>
+                   <td>700$</td>
+                   <td></td>
+                 </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="tab-pane fade" id="nav-closeinvest" role="tabpanel" aria-labelledby="nav-closeinvest-tab">
+            5
+         </div>
+         <div class="tab-pane fade" id="nav-profitinvest" role="tabpanel" aria-labelledby="nav-profitinvest-tab">
+            <h4><a href="#">id423</a></h4>
+            <table class="table">
+               <thead>
+                 <tr>
+                   <th scope="col">Total USD</th>
+                   <th scope="col">Open date</th>
+                   <th scope="col">My profit $</th>
+                   <th scope="col">Profit leader</th>
+                   <th scope="col">Profit trade24</th>
+                   <th scope="col">Next % profit</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">500$</th>
+                   <td>01.12.2023 </td>
+                   <td>214$</td>
+                   <td>42$</td>
+                   <td>112$</td>
+                   <td>3.5923%</td>
+                 </tr>
+               </tbody>
+            </table>
+
+            <h4><a href="#">id653</a></h4>
+            <table class="table">
+               <thead>
+                 <tr>
+                   <th scope="col">Total USD</th>
+                   <th scope="col">Open date</th>
+                   <th scope="col">My profit $</th>
+                   <th scope="col">Profit leader</th>
+                   <th scope="col">Profit trade24</th>
+                   <th scope="col">Next % profit</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">500$</th>
+                   <td>01.12.2023 </td>
+                   <td>214$</td>
+                   <td>42$</td>
+                   <td>112$</td>
+                   <td>3.5923%</td>
+                 </tr>
+               </tbody>
+            </table>
+
+            <h4><a href="#">id783</a></h4>
+            <table class="table">
+               <thead>
+                 <tr>
+                   <th scope="col">Total USD</th>
+                   <th scope="col">Open date</th>
+                   <th scope="col">My profit $</th>
+                   <th scope="col">Profit leader</th>
+                   <th scope="col">Profit trade24</th>
+                   <th scope="col">Next % profit</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">500$</th>
+                   <td>01.12.2023 </td>
+                   <td>214$</td>
+                   <td>42$</td>
+                   <td>112$</td>
+                   <td>3.5923%</td>
+                 </tr>
+               </tbody>
+            </table>
+         </div>
+       </div>
       
    </div>
 </div>
