@@ -59,15 +59,24 @@
             </div>
             <div>
                <p class="mt-3" role="alert">Choose voice acting</p>
-               <div class="d-flex justify-content-between" >
+               <div class="d-flex justify-content-between">
                   <div>
-                     <button type="button" class="btn btn-dark btn-sm voice-btn">
+                     <button
+                        type="button"
+                        class="btn btn-dark btn-sm voice-btn"
+                     >
                         eng
                      </button>
-                     <button type="button" class="btn btn-dark btn-sm voice-btn">
+                     <button
+                        type="button"
+                        class="btn btn-dark btn-sm voice-btn"
+                     >
                         ru
                      </button>
-                     <button type="button" class="btn btn-dark btn-sm voice-btn">
+                     <button
+                        type="button"
+                        class="btn btn-dark btn-sm voice-btn"
+                     >
                         中國人
                      </button>
                   </div>
@@ -128,7 +137,11 @@
                   <tbody>
                      <tr>
                         <th scope="row">
-                           <a href="#" data-toggle="modal" data-target="#exampleModalLg">
+                           <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target="#exampleModalLg"
+                           >
                               id423
                            </a>
                         </th>
@@ -147,7 +160,11 @@
                      </tr>
                      <tr>
                         <th scope="row">
-                           <a href="#" data-toggle="modal" data-target="#exampleModalLg">
+                           <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target="#exampleModalLg"
+                           >
                               id523
                            </a>
                         </th>
@@ -166,7 +183,11 @@
                      </tr>
                      <tr>
                         <th scope="row">
-                           <a href="#" data-toggle="modal" data-target="#exampleModalLg">
+                           <a
+                              href="#"
+                              data-toggle="modal"
+                              data-target="#exampleModalLg"
+                           >
                               id4521
                            </a>
                         </th>
@@ -236,7 +257,7 @@
    <div class="modal-dialog small-modal">
       <div class="modal-content">
          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Balance</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Close invest</h5>
             <button
                type="button"
                class="close"
@@ -286,8 +307,10 @@
                   </button>
                </div>
 
-               <div class="form-inline mt-4">
-                  <div class="form-group mb-2">
+               <div class="form-inline align-items-start mt-4">
+                  <div
+                     class="form-group d-flex flex-column align-items-start mb-2"
+                  >
                      <label for="emailConfirmationCode" class="sr-only"
                         >Confirmation code</label
                      >
@@ -297,8 +320,14 @@
                         id="emailConfirmationCode"
                         placeholder="Confirmation code"
                      />
+                     <a href="#" class="send-code mt-1 mb-2">
+                        Resend code to email
+                     </a>
                   </div>
-                  <button type="submit" class="btn btn-primary mb-2 ml-1">
+                  <button
+                     type="submit"
+                     class="btn btn-primary btn-primary_mt mb-2 ml-1"
+                  >
                      Confirm
                   </button>
                </div>
@@ -334,50 +363,64 @@
 </div>
 
 <!-- Large modal -->
-<div class="modal fade show" id="exampleModalLg" tabindex="-1" aria-labelledby="exampleModalLg" aria-modal="true" role="dialog">
+<div
+   class="modal fade show"
+   id="exampleModalLg"
+   tabindex="-1"
+   aria-labelledby="exampleModalLg"
+   aria-modal="true"
+   role="dialog"
+>
    <div class="modal-dialog modal-lg">
-     <div class="modal-content">
-       <div class="modal-header">
-         <h5 class="modal-title h4" id="exampleModalLg">More about investments</h5>
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-           <span aria-hidden="true">×</span>
-         </button>
-       </div>
-       <div class="modal-body">
-         <div class="modal-content more-invest p-3">
-            <table class="table">
-               <thead>
-                 <tr>
-                   <th scope="col">id</th>
-                   <th scope="col">Investment amount</th>
-                   <th scope="col">Date</th>
-                   <th scope="col">More information</th>
-                 </tr>
-               </thead>
-               <tbody>
-                 <tr>
-                   <th scope="row">id423</th>
-                   <td>100$</td>
-                   <td>20.02.23</td>
-                   <td>More info</td>
-                 </tr>
-                 <tr>
-                   <th scope="row">id423</th>
-                   <td>500$</td>
-                   <td>12.01.22</td>
-                   <td>More info</td>
-                 </tr>
-                 <tr>
-                   <th scope="row">id423</th>
-                   <td>1500$</td>
-                   <td>14.12.22</td>
-                   <td>More info</td>
-                 </tr>
-               </tbody>
-             </table>
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title h4" id="exampleModalLg">
+               More about investments
+            </h5>
+            <button
+               type="button"
+               class="close"
+               data-dismiss="modal"
+               aria-label="Close"
+            >
+               <span aria-hidden="true">×</span>
+            </button>
          </div>
-       </div>
-     </div>
+         <div class="modal-body">
+            <div class="modal-content more-invest p-3">
+               <table class="table">
+                  <thead>
+                     <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Investment amount</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">More information</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <th scope="row">id423</th>
+                        <td>100$</td>
+                        <td>20.02.23</td>
+                        <td>More info</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">id423</th>
+                        <td>500$</td>
+                        <td>12.01.22</td>
+                        <td>More info</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">id423</th>
+                        <td>1500$</td>
+                        <td>14.12.22</td>
+                        <td>More info</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
    </div>
 </div>
 

@@ -1,167 +1,304 @@
 <div class="main-alerts">
    <div class="container substrate">
-      <p class="h1 mt-5">
-         Profile
-      </p>
+      <p class="h1 mt-5">Profile</p>
 
       <div class="row profile-data">
          <div class="col-xl-6 col-sm-12 mb-4">
             <div class="form-group mb-3 pt-4">
                <label for="userFirstName">First name</label>
-               <input type="text" class="form-control" id="userFirstName" aria-describedby="userFirstNamelHelp" placeholder="First name">
-               <small id="userFirstNamelHelp" class="form-text text-muted">Please enter your last name.</small>
-             </div>
+               <input
+                  type="text"
+                  class="form-control"
+                  id="userFirstName"
+                  aria-describedby="userFirstNamelHelp"
+                  placeholder="First name"
+               />
+               <small id="userFirstNamelHelp" class="form-text text-muted"
+                  >Please enter your last name.</small
+               >
+            </div>
 
-             <div class="form-group mb-3">
+            <div class="form-group mb-3">
                <label for="userLastName">Last name:</label>
-               <input type="text" class="form-control" id="userLasttName" aria-describedby="userLastNamelHelp" placeholder="Last name">
-               <small id="userLastNamelHelp" class="form-text text-muted">Please enter your name.</small>
-             </div>
+               <input
+                  type="text"
+                  class="form-control"
+                  id="userLasttName"
+                  aria-describedby="userLastNamelHelp"
+                  placeholder="Last name"
+               />
+               <small id="userLastNamelHelp" class="form-text text-muted"
+                  >Please enter your name.</small
+               >
+            </div>
 
-             <div class="form-group mb-5">
+            <div class="form-group mb-5">
                <label>Your birthday</label>
                <div class="birthday">
                   <select class="form-control birthday__day" id="day">
-                    <option selected>Day</option>
-                    <option>01</option>
-                    <option>02</option>
-                    <option>03</option>
-                    <option>14</option>
-                    <option>15</option>
-                    <option>25</option>
+                     <option selected>Day</option>
+                     <option>01</option>
+                     <option>02</option>
+                     <option>03</option>
+                     <option>14</option>
+                     <option>15</option>
+                     <option>25</option>
                   </select>
-  
+
                   <select class="form-control birthday__month" id="month">
-                    <option selected>Month</option>
-                    <option>01</option>
-                    <option>02</option>
-                    <option>03</option>
-                    <option>04</option>
-                    <option>05</option>
+                     <option selected>Month</option>
+                     <option>01</option>
+                     <option>02</option>
+                     <option>03</option>
+                     <option>04</option>
+                     <option>05</option>
                   </select>
-  
+
                   <select class="form-control birthday__yer" id="yer">
-                    <option selected>Yer</option>
-                    <option>2001</option>
-                    <option>2002</option>
-                    <option>2003</option>
-                    <option>2004</option>
-                    <option>2005</option>
+                     <option selected>Yer</option>
+                     <option>2001</option>
+                     <option>2002</option>
+                     <option>2003</option>
+                     <option>2004</option>
+                     <option>2005</option>
                   </select>
                </div>
-             </div>
-             
+            </div>
 
-             <div class="form-group mb-3">
+            <div class="form-group mb-3">
                <label for="yourPhoneNumber">Phone number</label>
-               <input type="tel" class="form-control" id="yourPhoneNumber" placeholder="Enter your phone number">
-             </div>
+               <input
+                  type="tel"
+                  class="form-control"
+                  id="yourPhoneNumber"
+                  placeholder="Enter your phone number"
+               />
+            </div>
 
-             <div class="form-group mb-3">
+            <div class="form-group mb-3">
                <label for="yourEmail">Email</label>
-               <input type="email" class="form-control" id="yourEmail" placeholder="Enter your email">
-             </div>
+               <input
+                  type="email"
+                  class="form-control"
+                  id="yourEmail"
+                  placeholder="Enter your email"
+               />
+            </div>
 
-             <button class="btn btn-dark mb-5" aria-label="save form button">Save</button>
+            <button class="btn btn-dark mb-5" aria-label="save form button">
+               Save
+            </button>
 
-             <div class="section-names">
-               password
-             </div>
+            <div class="section-names">password</div>
 
-             <div>
-               <button class="btn btn-dark mb-3" aria-label="save form button">Change password</button>
+            <div>
+               <button class="btn btn-dark mb-3" aria-label="save form button">
+                  Change password
+               </button>
             </div>
 
             <div class="form-group mb-3">
                <label for="emailCode">Code on mail</label>
-               <input type="text" class="form-control mb-2" id="emailCode" aria-describedby="emailCodelHelp" placeholder="Enter code" disabled>
+               <input
+                  type="text"
+                  class="form-control mb-2"
+                  id="emailCode"
+                  aria-describedby="emailCodelHelp"
+                  placeholder="Enter code"
+                  disabled
+               />
                <a href="#" class="send-code">Resend code to email</a>
-             </div>
+            </div>
 
-             <div class="mb-3">
+            <div class="mb-3">
                <div class="form-group">
-                 <label for="newPassword">New password:</label>
-                 <input type="password" class="form-control" id="newPassword" placeholder="Enter new password" disabled>
+                  <label for="newPassword">New password:</label>
+                  <input
+                     type="password"
+                     class="form-control"
+                     id="newPassword"
+                     placeholder="Enter new password"
+                     disabled
+                  />
                </div>
                <div class="form-group">
-                 <label for="repeatPassword">Repeat new password:</label>
-                 <input type="password" class="form-control" id="repeatPassword" placeholder="Enter repeat new password" disabled>
+                  <label for="repeatPassword">Repeat new password:</label>
+                  <input
+                     type="password"
+                     class="form-control"
+                     id="repeatPassword"
+                     placeholder="Enter repeat new password"
+                     disabled
+                  />
                </div>
-             </div>
-             <button class="btn btn-dark mb-5" aria-label="save form button">Save</button>
-            
-             <div class="section-names">
-               security
-             </div>
+            </div>
+            <button class="btn btn-dark mb-5" aria-label="save form button">
+               Save
+            </button>
 
-             <div class="custom-checkbox">
-                <input id='one' type='checkbox' />
-                <label for='one'>
+            <div class="section-names">security</div>
+
+            <div class="custom-checkbox">
+               <input id="one" type="checkbox" />
+               <label for="one" class="custom-checkbox__lebel">
                   <span></span>
                   Google Authentication
-                  <ins><i>Google Authentication</i></ins>
-                </label>
-             </div>
-
-             <div class="Authentication mb-3">
-               <p>1. Download app 
-                  <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=ru&gl=US&pli=1">
-                  Google Authentication app
-                  </a>
-                </p>
-               <p>2. Generate code </p>
-               <p>3. Succes</p>
-             </div>
-
-             <div class="custom-checkbox">
-               <input id='emailVer' type='checkbox' />
-               <label for='emailVer'>
-                 <span></span>
-                 Email verification
-                 <ins><i>Email verification</i></ins>
-               </label>
-
-               <input id='withdrawal' type='checkbox' />
-               <label for='withdrawal'>
-                 <span></span>
-                 Withdrawal
-                 <ins><i>Withdrawal</i></ins>
-               </label>
-
-               <input id='tariffClosing' type='checkbox' />
-               <label for='tariffClosing'>
-                 <span></span>
-                 Tariff closing
-                 <ins><i>Tariff closing</i></ins>
+                  <ins><i class="checkbox-text">Google Authentication</i></ins>
                </label>
             </div>
 
-            <button class="btn btn-dark mb-5" aria-label="save form button">Reset</button>
+            <div class="Authentication mb-3">
+               <p>
+                  1. Download app
+                  <a
+                     href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=ru&gl=US&pli=1"
+                  >
+                     Google Authentication app
+                  </a>
+               </p>
+               <p>2. Generate code</p>
+               <p>3. Succes</p>
+            </div>
 
-             <div class="section-names">
-               language
-             </div>
-             <div class="form-group mb-2">
-               <label for="language">Language </label>
-                  <select class="form-control language" id="language">
-                    <option selected>Eng</option>
-                    <option>Ru</option>
-                    <option>中國人</option>
-                  </select>
+            <div class="custom-checkbox">
+               <input id="emailVer" type="checkbox" />
+               <label for="emailVer">
+                  <span></span>
+                  Email verification
+                  <ins><i class="checkbox-text">Email verification</i></ins>
+               </label>
+
+               <div class="custom-checkbox-small mb-4 disabled">
+                  <input id="withdrawal" type="checkbox" disabled />
+                  <label for="withdrawal">
+                     <span></span>
+                     Withdrawal
+                     <ins><i>Withdrawal</i></ins>
+                  </label>
+
+                  <input id="tariffClosing" type="checkbox" disabled />
+                  <label for="tariffClosing">
+                     <span></span>
+                     Tariff closing
+                     <ins><i>Tariff closing</i></ins>
+                  </label>
                </div>
+            </div>
 
+            <button
+               class="btn btn-dark mb-5"
+               aria-label="save form button"
+               data-toggle="modal"
+               data-target=".bd-example-modal-sm"
+            >
+               Reset
+            </button>
+
+            <div class="section-names">language</div>
+            <div class="form-group mb-2">
+               <!-- <label for="language">Language </label> -->
+               <select
+                  class="form-control language"
+                  id="language"
+                  aria-label="Language select"
+               >
+                  <option selected>Eng</option>
+                  <option>Ru</option>
+                  <option>中國人</option>
+               </select>
+            </div>
          </div>
 
          <div class="col-xl-4 col-md-6 col-sm-8 user-photo-block mb-4">
             <div class="profile-photo">
                <div class="profile-photo__img"></div>
                <a href="#" class="profile-photo__delete-btn">Delete photo</a>
-               <span role="label" aria-label="Upload a new photo">Upload a new photo</span>
-               <button class="btn btn-dark profile-photo__load-btn">Choose a photo</button>
-               <span class="profile-photo__recom">We recommend photos 200x200 or larger.</span>
+               <span role="label" aria-label="Upload a new photo"
+                  >Upload a new photo</span
+               >
+               <button class="btn btn-dark profile-photo__load-btn">
+                  Choose a photo
+               </button>
+               <span class="profile-photo__recom"
+                  >We recommend photos 200x200 or larger.</span
+               >
             </div>
          </div>
       </div>
-      
    </div>
 </div>
+
+<!-- Small modal -->
+<div
+   class="modal fade bd-example-modal-sm"
+   tabindex="-1"
+   role="dialog"
+   aria-labelledby="mySmallModalLabel"
+   aria-hidden="true"
+>
+   <div class="modal-dialog small-modal">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Reset</h5>
+            <button
+               type="button"
+               class="close"
+               data-dismiss="modal"
+               aria-label="Close"
+            >
+               <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="modal-body">
+            <div class="modal-content p-3">
+               <div class="form-inline align-items-start mt-4">
+                  <div
+                     class="form-group d-flex flex-column align-items-start mb-2"
+                  >
+                     <label for="emailConfirmationCode" class="sr-only"
+                        >Confirmation code</label
+                     >
+                     <input
+                        type="text"
+                        class="form-control"
+                        id="emailConfirmationCode"
+                        placeholder="Confirmation code"
+                     />
+                     <a href="#" class="send-code mt-1 mb-2">
+                        Resend code to email
+                     </a>
+                  </div>
+                  <button
+                     type="submit"
+                     class="btn btn-primary btn-primary_mt mb-2 ml-1"
+                  >
+                     Confirm
+                  </button>
+               </div>
+
+               <button
+                  type="button"
+                  id="problemsBtn"
+                  class="btn btn-warning mt-4"
+               >
+                  Are you problems?
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<script>
+   $('#emailVer').on('click', function () {
+      if (this.checked) {
+         $('.custom-checkbox-small').removeClass('disabled');
+         $('#withdrawal').prop('disabled', false);
+         $('#tariffClosing').prop('disabled', false);
+      } else {
+         $('#withdrawal').prop('disabled', true);
+         $('#tariffClosing').prop('disabled', true);
+         $('.custom-checkbox-small').addClass('disabled');
+      }
+   });
+</script>
