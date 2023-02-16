@@ -1,12 +1,12 @@
 <div class="container substrate">
    <p class="h1 mt-5">Home</p>
    <div class="home-nav">
-      <p class="h3">Balance: <span class="text-muted">0.00 $</span></p>
+      <p class="h3">Balance: <span class="text-pinck">0.00 $</span></p>
       <div role="button group" aria-label="Button group">
          <button
             type="button"
             id="openDepositModal"
-            class="btn btn-dark mr-2 home-nav__btn"
+            class="btn btn-primary mr-2 mb-2 home-nav__btn"
             data-toggle="modal"
             data-target="#exampleModal"
          >
@@ -15,16 +15,19 @@
          <button
             type="button"
             id="openWithdrawalModal"
-            class="btn btn-dark mr-2 home-nav__btn"
+            class="btn btn-primary mr-2 mb-2 home-nav__btn"
             data-toggle="modal"
             data-target="#exampleModal"
          >
             Withdrawal
          </button>
-         <button type="button" class="btn btn-dark mr-2 home-nav__btn refs">
+         <button
+            type="button"
+            class="btn btn-primary mr-2 mb-2 home-nav__btn refs"
+         >
             Ref
          </button>
-         <button type="button" class="btn btn-primary mr-2 home-nav__btn">
+         <button type="button" class="btn btn-dark mr-2 mb-2 home-nav__btn">
             More
          </button>
       </div>
@@ -32,85 +35,74 @@
 </div>
 
 <div class="container substrate mt-5">
-   <div class="row">
+   <div class="row justify-content-between">
       <div class="col-sm-8 col-md-4 mb-5">
-         <div class="card">
-            <h5 class="card-header">All profit</h5>
-            <div class="card-body">
+         <div class="card card-profit">
+            <div class="card-profit__header">
+               <h5 class="card-title">All profit</h5>
                <h5 class="card-title">% / $</h5>
+            </div>
+            <div class="card-body card-profit__body">
                <p class="card-text">34% / 1200$</p>
-               <a href="#" class="btn btn-primary">Shere</a>
+               <div class="text-right">
+                  <a href="#" class="btn card-profit__btn">Shere</a>
+               </div>
             </div>
          </div>
       </div>
-      <div class="col-sm-12 col-md-6">
-         <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-               <button
-                  class="nav-link active"
-                  id="home-tab"
+      <div class="col-sm-12 col-md-7">
+         <nav>
+            <div class="nav nav-tabs" id="home-tabs" role="tablist">
+               <a
+                  class="nav-item nav-link active"
+                  id="open-invest-tab"
                   data-toggle="tab"
-                  data-target="#home"
-                  type="button"
+                  href="#open-invest"
                   role="tab"
-                  aria-controls="home"
+                  aria-controls="open-invest"
                   aria-selected="true"
+                  >Open invest</a
                >
-                  Open invest
-               </button>
-            </li>
-            <li class="nav-item" role="presentation">
-               <button
-                  class="nav-link"
-                  id="profile-tab"
+               <a
+                  class="nav-item nav-link"
+                  id="nav-transactions-tab"
                   data-toggle="tab"
-                  data-target="#profile"
-                  type="button"
+                  href="#nav-transactions"
                   role="tab"
-                  aria-controls="profile"
+                  aria-controls="nav-transactions"
                   aria-selected="false"
+                  >Transactions</a
                >
-                  Transactions
-               </button>
-            </li>
-            <li class="nav-item" role="presentation">
-               <button
-                  class="nav-link"
-                  id="messages-tab"
+               <a
+                  class="nav-item nav-link"
+                  id="nav-statistic-tab"
                   data-toggle="tab"
-                  data-target="#messages"
-                  type="button"
+                  href="#nav-statistic"
                   role="tab"
-                  aria-controls="messages"
+                  aria-controls="nav-statistic"
                   aria-selected="false"
+                  >Statistic</a
                >
-                  Statistic
-               </button>
-            </li>
-            <li class="nav-item" role="presentation">
-               <button
-                  class="nav-link"
-                  id="settings-tab"
+               <a
+                  class="nav-item nav-link"
+                  id="nav-partners-tab"
                   data-toggle="tab"
-                  data-target="#settings"
-                  type="button"
+                  href="#nav-partners"
                   role="tab"
-                  aria-controls="settings"
+                  aria-controls="nav-partners"
                   aria-selected="false"
+                  >Last partners invest</a
                >
-                  Last partners invest
-               </button>
-            </li>
-         </ul>
-
-         <div class="tab-content">
+            </div>
+         </nav>
+         <div class="tab-content" id="home-tabsContent">
             <div
-               class="tab-pane"
-               id="home"
+               class="tab-pane fade show active"
+               id="open-invest"
                role="tabpanel"
-               aria-labelledby="home-tab"
+               aria-labelledby="open-invest-tab"
             >
-               <div class="card p-2">
+               <div class="table-wrap">
                   <table class="table">
                      <thead>
                         <tr>
@@ -137,22 +129,24 @@
                         </tr>
                      </tbody>
                   </table>
-                  <a
-                     href="#"
-                     class="btn btn-primary mt-3"
-                     role="button"
-                     style="width: 100px"
-                     >View all</a
-                  >
+                  <div class="text-right">
+                     <a
+                        href="#"
+                        class="btn btn-outline-danger"
+                        role="button"
+                        style="width: 100px"
+                        >View all</a
+                     >
+                  </div>
                </div>
             </div>
             <div
-               class="tab-pane"
-               id="profile"
+               class="tab-pane fade"
+               id="nav-transactions"
                role="tabpanel"
-               aria-labelledby="profile-tab"
+               aria-labelledby="nav-transactions-tab"
             >
-               <div class="card p-2">
+               <div class="table-wrap">
                   <table class="table">
                      <tbody>
                         <tr>
@@ -177,22 +171,24 @@
                         </tr>
                      </tbody>
                   </table>
-                  <a
-                     href="#"
-                     class="btn btn-primary mt-3"
-                     role="button"
-                     style="width: 100px"
-                     >View all</a
-                  >
+                  <div class="text-right">
+                     <a
+                        href="#"
+                        class="btn btn-outline-danger"
+                        role="button"
+                        style="width: 100px"
+                        >View all</a
+                     >
+                  </div>
                </div>
             </div>
             <div
-               class="tab-pane"
-               id="messages"
+               class="tab-pane fade"
+               id="nav-statistic"
                role="tabpanel"
-               aria-labelledby="messages-tab"
+               aria-labelledby="nav-statistic-tab"
             >
-               <div class="card p-2">
+               <div class="table-wrap">
                   <table class="table">
                      <tbody>
                         <tr>
@@ -217,22 +213,24 @@
                         </tr>
                      </tbody>
                   </table>
-                  <a
-                     href="#"
-                     class="btn btn-primary mt-3"
-                     role="button"
-                     style="width: 100px"
-                     >View all</a
-                  >
+                  <div class="text-right">
+                     <a
+                        href="#"
+                        class="btn btn-outline-danger"
+                        role="button"
+                        style="width: 100px"
+                        >View all</a
+                     >
+                  </div>
                </div>
             </div>
             <div
-               class="tab-pane"
-               id="settings"
+               class="tab-pane fade"
+               id="nav-partners"
                role="tabpanel"
-               aria-labelledby="settings-tab"
+               aria-labelledby="nav-partners-tab"
             >
-               <div class="card p-2">
+               <div class="table-wrap">
                   <table class="table">
                      <tbody>
                         <tr>
@@ -252,13 +250,15 @@
                         </tr>
                      </tbody>
                   </table>
-                  <a
-                     href="#"
-                     class="btn btn-primary mt-3"
-                     role="button"
-                     style="width: 100px"
-                     >View all</a
-                  >
+                  <div class="text-right">
+                     <a
+                        href="#"
+                        class="btn btn-outline-danger"
+                        role="button"
+                        style="width: 100px"
+                        >View all</a
+                     >
+                  </div>
                </div>
             </div>
          </div>
@@ -266,7 +266,8 @@
    </div>
 </div>
 <script>
-   $('#myTab li:last-child button').tab('show');
+   $('#home-tabs #open-invest').tab('show');
+
    $('.refs').on('click', function () {
       $('#liveToast').toast('show');
    });

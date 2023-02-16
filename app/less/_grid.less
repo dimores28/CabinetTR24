@@ -77,7 +77,6 @@ h1, h2, h3, h4 {
 .btn-outline-danger {
     color: #EB00FF;
     font-weight: 500;
-    font-size: 16px;
     line-height: 106.8%;
     letter-spacing: 0.015em;
     border: 2px solid #EB00FF;
@@ -91,6 +90,10 @@ h1, h2, h3, h4 {
   color: #fff;
   background-color: #EB00FF;
   border-color: #EB00FF;
+}
+
+.btn-warning {
+  padding: 12px 27px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -218,7 +221,34 @@ h1, h2, h3, h4 {
 }
 
 .modal-content .table thead th {
-  border-bottom: 1px solid rgba(235, 0, 255, 0.75);
+  border-bottom: 1px solid transparent;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid transparent;
+}
+
+.nav-tabs:last-child {
+  padding-right: 12px;
+}
+
+.table-wrap {
+  border: 1px solid rgba(235, 0, 255, 0.75);
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 20px 20px;
+}
+
+.nav-tabs .nav-link {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+@media (max-width: 362px) {
+  .table-wrap {
+     overflow-x: scroll;
+  }
 }
 
 .form-control {

@@ -26,7 +26,7 @@ $('#burgerBtn').on('click', function () {
 //   }
 // });
 
-$('#myTab li:last-child button').tab('show');
+$('#home-tabs #open-invest').tab('show');
 
 
 $('#myTab button').on('click', function (event) {
@@ -341,11 +341,11 @@ $('#transactionsModalBtn').on('click', function() {
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Date</th>
-            <th scope="col">Transactions</th>
-            <th scope="col">Number coins</th>
-            <th scope="col">Price</th>
+            <th scope="col" style="border-bottom: 1px solid rgba(235, 0, 255, 0.75);">#</th>
+            <th scope="col" style="border-bottom: 1px solid rgba(235, 0, 255, 0.75);">Date</th>
+            <th scope="col" style="border-bottom: 1px solid rgba(235, 0, 255, 0.75);">Transactions</th>
+            <th scope="col" style="border-bottom: 1px solid rgba(235, 0, 255, 0.75);">Number coins</th>
+            <th scope="col" style="border-bottom: 1px solid rgba(235, 0, 255, 0.75);">Price</th>
           </tr>
         </thead>
         <tbody>

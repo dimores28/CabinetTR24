@@ -4,7 +4,7 @@
       <div class="row">
          <div class="col-xl-5 col-md-6 col-sm-12 mb-4">
             <div class="investment-column">
-               <p class="h3">Balance: <span class="text-muted">0.00 $</span></p>
+               <p class="h3">Balance: <span class="text-pinck">0.00 $</span></p>
                <div class="mt-4">
                   <div class="form-group">
                      <label for="investmentAmount">Investment amount</label>
@@ -63,25 +63,25 @@
                   <div>
                      <button
                         type="button"
-                        class="btn btn-dark btn-sm voice-btn"
+                        class="btn btn-dark btn-sm voice-btn mb-1"
                      >
                         eng
                      </button>
                      <button
                         type="button"
-                        class="btn btn-dark btn-sm voice-btn"
+                        class="btn btn-dark btn-sm voice-btn mb-1"
                      >
                         ru
                      </button>
                      <button
                         type="button"
-                        class="btn btn-dark btn-sm voice-btn"
+                        class="btn btn-dark btn-sm voice-btn mb-1"
                      >
                         中國人
                      </button>
                   </div>
 
-                  <button type="button" class="btn btn-dark btn-sm">
+                  <button type="button" class="btn btn-dark btn-sm mb-1">
                      Open pdf
                   </button>
                </div>
@@ -90,7 +90,12 @@
       </div>
 
       <div class="mt-5">
-         <ul class="nav nav-tabs" id="investTab" role="tablist">
+         <ul
+            class="nav nav-tabs"
+            id="investTab"
+            role="tablist"
+            style="margin-bottom: -4px"
+         >
             <li class="nav-item">
                <a
                   class="nav-link active"
@@ -100,6 +105,7 @@
                   role="tab"
                   aria-controls="home"
                   aria-selected="true"
+                  style="margin-right: -2px"
                >
                   Open invest
                </a>
@@ -118,97 +124,105 @@
                </a>
             </li>
          </ul>
-         <div class="tab-content" id="investTabContent">
+         <div
+            class="tab-content"
+            id="investTabContent"
+            style="margin-left: -4px"
+         >
             <div
                class="investment-table p-1 tab-pane fade show active"
                id="invest"
                role="tabpanel"
                aria-labelledby="invest-tab"
             >
-               <table class="table">
-                  <thead>
-                     <tr>
-                        <th scope="col">id</th>
-                        <th scope="col">Balance</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Handle</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <th scope="row">
-                           <a
-                              href="#"
-                              data-toggle="modal"
-                              data-target="#exampleModalLg"
-                           >
-                              id423
-                           </a>
-                        </th>
-                        <td>100$</td>
-                        <td>20.02.23</td>
-                        <td>
-                           <button
-                              type="button"
-                              class="btn btn-dark btn-sm"
-                              data-toggle="modal"
-                              data-target=".bd-example-modal-sm"
-                           >
-                              Close invest
-                           </button>
-                        </td>
-                     </tr>
-                     <tr>
-                        <th scope="row">
-                           <a
-                              href="#"
-                              data-toggle="modal"
-                              data-target="#exampleModalLg"
-                           >
-                              id523
-                           </a>
-                        </th>
-                        <td>5000$</td>
-                        <td>12.01.22</td>
-                        <td>
-                           <button
-                              type="button"
-                              class="btn btn-dark btn-sm"
-                              data-toggle="modal"
-                              data-target=".bd-example-modal-sm"
-                           >
-                              Close invest
-                           </button>
-                        </td>
-                     </tr>
-                     <tr>
-                        <th scope="row">
-                           <a
-                              href="#"
-                              data-toggle="modal"
-                              data-target="#exampleModalLg"
-                           >
-                              id4521
-                           </a>
-                        </th>
-                        <td>15000$</td>
-                        <td>14.12.22</td>
-                        <td>
-                           <button
-                              type="button"
-                              class="btn btn-dark btn-sm"
-                              data-toggle="modal"
-                              data-target=".bd-example-modal-sm"
-                           >
-                              Close invest
-                           </button>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-               <button type="button" class="btn btn-primary mt-2">
-                  View all
-               </button>
+               <div class="table-wrap">
+                  <table class="table">
+                     <thead>
+                        <tr>
+                           <th scope="col">id</th>
+                           <th scope="col">Balance</th>
+                           <th scope="col">Date</th>
+                           <th scope="col">Handle</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <th scope="row">
+                              <a
+                                 href="#"
+                                 data-toggle="modal"
+                                 data-target="#exampleModalLg"
+                              >
+                                 id423
+                              </a>
+                           </th>
+                           <td>100$</td>
+                           <td>20.02.23</td>
+                           <td>
+                              <button
+                                 type="button"
+                                 class="btn btn-dark btn-sm"
+                                 data-toggle="modal"
+                                 data-target=".bd-example-modal-sm"
+                              >
+                                 Close invest
+                              </button>
+                           </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">
+                              <a
+                                 href="#"
+                                 data-toggle="modal"
+                                 data-target="#exampleModalLg"
+                              >
+                                 id523
+                              </a>
+                           </th>
+                           <td>5000$</td>
+                           <td>12.01.22</td>
+                           <td>
+                              <button
+                                 type="button"
+                                 class="btn btn-dark btn-sm"
+                                 data-toggle="modal"
+                                 data-target=".bd-example-modal-sm"
+                              >
+                                 Close invest
+                              </button>
+                           </td>
+                        </tr>
+                        <tr>
+                           <th scope="row">
+                              <a
+                                 href="#"
+                                 data-toggle="modal"
+                                 data-target="#exampleModalLg"
+                              >
+                                 id4521
+                              </a>
+                           </th>
+                           <td>15000$</td>
+                           <td>14.12.22</td>
+                           <td>
+                              <button
+                                 type="button"
+                                 class="btn btn-dark btn-sm"
+                                 data-toggle="modal"
+                                 data-target=".bd-example-modal-sm"
+                              >
+                                 Close invest
+                              </button>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <div class="text-right">
+                     <button type="button" class="btn btn-outline-danger mt-2">
+                        View all
+                     </button>
+                  </div>
+               </div>
             </div>
             <div
                class="history-table tab-pane p-1 fade"
@@ -216,30 +230,34 @@
                role="tabpanel"
                aria-labelledby="history-tab"
             >
-               <table class="table">
-                  <thead>
-                     <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Sum</th>
-                        <th scope="col">Date</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <th scope="row">1</th>
-                        <td>23$</td>
-                        <td>01.12.2023</td>
-                     </tr>
-                     <tr>
-                        <th scope="row">2</th>
-                        <td>52$</td>
-                        <td>02.03.2024</td>
-                     </tr>
-                  </tbody>
-               </table>
-               <button type="button" class="btn btn-primary mt-2">
-                  View all
-               </button>
+               <div class="table-wrap">
+                  <table class="table">
+                     <thead>
+                        <tr>
+                           <th scope="col">#</th>
+                           <th scope="col">Sum</th>
+                           <th scope="col">Date</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <th scope="row">1</th>
+                           <td>23$</td>
+                           <td>01.12.2023</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">2</th>
+                           <td>52$</td>
+                           <td>02.03.2024</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <div class="text-right">
+                     <button type="button" class="btn btn-outline-danger mt-2">
+                        View all
+                     </button>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
@@ -254,7 +272,7 @@
    aria-labelledby="mySmallModalLabel"
    aria-hidden="true"
 >
-   <div class="modal-dialog small-modal">
+   <div class="modal-dialog small-modal" style="max-width: 513px">
       <div class="modal-content">
          <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Close invest</h5>
@@ -270,89 +288,65 @@
          <div class="modal-body">
             <div class="modal-content p-3">
                <div>
-                  <button
-                     type="button"
-                     class="btn btn-dark btn-sm my-1 mt-1"
-                     style="width: 54px"
-                  >
+                  <button type="button" class="btn btn-dark btn-sm my-1 mt-1">
                      10%
                   </button>
-                  <button
-                     type="button"
-                     class="btn btn-dark btn-sm my-1 mt-1"
-                     style="width: 54px"
-                  >
+                  <button type="button" class="btn btn-dark btn-sm my-1 mt-1">
                      25%
                   </button>
-                  <button
-                     type="button"
-                     class="btn btn-dark btn-sm my-1 mt-1"
-                     style="width: 54px"
-                  >
+                  <button type="button" class="btn btn-dark btn-sm my-1 mt-1">
                      50%
                   </button>
-                  <button
-                     type="button"
-                     class="btn btn-dark btn-sm my-1 mt-1"
-                     style="width: 54px"
-                  >
+                  <button type="button" class="btn btn-dark btn-sm my-1 mt-1">
                      75%
                   </button>
-                  <button
-                     type="button"
-                     class="btn btn-dark btn-sm my-1 mt-1"
-                     style="width: 54px"
-                  >
+                  <button type="button" class="btn btn-dark btn-sm my-1 mt-1">
                      100%
                   </button>
                </div>
 
-               <div class="form-inline align-items-start mt-4">
-                  <div
-                     class="form-group d-flex flex-column align-items-start mb-2"
-                  >
-                     <label for="emailConfirmationCode" class="sr-only"
-                        >Confirmation code</label
-                     >
-                     <input
-                        type="text"
-                        class="form-control"
-                        id="emailConfirmationCode"
-                        placeholder="Confirmation code"
-                     />
-                     <a href="#" class="send-code mt-1 mb-2">
-                        Resend code to email
-                     </a>
-                  </div>
-                  <button
-                     type="submit"
-                     class="btn btn-primary btn-primary_mt mb-2 ml-1"
-                  >
-                     Confirm
-                  </button>
-               </div>
-
-               <div class="form-inline mt-2">
-                  <div class="form-group mb-2">
-                     <label for="googleAuthenticationCode" class="sr-only"
-                        >Google authentication code</label
-                     >
-                     <input
-                        type="text"
-                        class="form-control"
-                        id="googleAuthenticationCode"
-                        placeholder="Google authentication"
-                     />
-                  </div>
-                  <button type="submit" class="btn btn-primary mb-2 ml-1">
-                     Confirm
-                  </button>
+               <div class="align-items-start mt-4">
+                  <form>
+                     <div class="form-group">
+                        <label for="emailConfirmationCode"
+                           >Confirmation code</label
+                        >
+                        <input
+                           type="text"
+                           class="form-control"
+                           id="emailConfirmationCode"
+                           aria-describedby="emailConfirmationCodeHelp"
+                           placeholder="Confirmation code"
+                        />
+                        <small id="emailHelp" class="form-text text-muted">
+                           <a href="#" class="send-code mt-1 mb-2">
+                              Resend code to email
+                           </a>
+                        </small>
+                     </div>
+                     <button type="submit" class="btn btn-primary">
+                        Confirm
+                     </button>
+                     <div class="form-group mt-4">
+                        <label for="googleAuthenticationCod"
+                           >Google authentication code</label
+                        >
+                        <input
+                           type="text"
+                           class="form-control"
+                           id="googleAuthenticationCod"
+                        />
+                     </div>
+                     <button type="submit" class="btn btn-primary">
+                        Confirm
+                     </button>
+                  </form>
                </div>
 
                <button
                   type="button"
                   id="problemsBtn"
-                  class="btn btn-warning mt-4"
+                  class="btn btn-warning mt-5"
                >
                   Are you problems?
                </button>
@@ -391,10 +385,42 @@
                <table class="table">
                   <thead>
                      <tr>
-                        <th scope="col">id</th>
-                        <th scope="col">Investment amount</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">More information</th>
+                        <th
+                           scope="col"
+                           style="
+                              border-bottom: 1px solid rgba(235, 0, 255, 0.75);
+                              border-top: none;
+                           "
+                        >
+                           id
+                        </th>
+                        <th
+                           scope="col"
+                           style="
+                              border-bottom: 1px solid rgba(235, 0, 255, 0.75);
+                              border-top: none;
+                           "
+                        >
+                           Investment amount
+                        </th>
+                        <th
+                           scope="col"
+                           style="
+                              border-bottom: 1px solid rgba(235, 0, 255, 0.75);
+                              border-top: none;
+                           "
+                        >
+                           Date
+                        </th>
+                        <th
+                           scope="col"
+                           style="
+                              border-bottom: 1px solid rgba(235, 0, 255, 0.75);
+                              border-top: none;
+                           "
+                        >
+                           More information
+                        </th>
                      </tr>
                   </thead>
                   <tbody>

@@ -373,73 +373,58 @@
                      </div>
                   </div>
                   <div class="col-sm-12 col-md-7">
-                     <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                           <button
-                              class="nav-link active"
-                              id="home-tab"
+                     <nav>
+                        <div class="nav nav-tabs" id="home-tabs" role="tablist">
+                           <a
+                              class="nav-item nav-link active"
+                              id="open-invest-tab"
                               data-toggle="tab"
-                              data-target="#home"
-                              type="button"
+                              href="#open-invest"
                               role="tab"
-                              aria-controls="home"
+                              aria-controls="open-invest"
                               aria-selected="true"
+                              >Open invest</a
                            >
-                              Open invest
-                           </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                           <button
-                              class="nav-link"
-                              id="profile-tab"
+                           <a
+                              class="nav-item nav-link"
+                              id="nav-transactions-tab"
                               data-toggle="tab"
-                              data-target="#profile"
-                              type="button"
+                              href="#nav-transactions"
                               role="tab"
-                              aria-controls="profile"
+                              aria-controls="nav-transactions"
                               aria-selected="false"
+                              >Transactions</a
                            >
-                              Transactions
-                           </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                           <button
-                              class="nav-link"
-                              id="messages-tab"
+                           <a
+                              class="nav-item nav-link"
+                              id="nav-statistic-tab"
                               data-toggle="tab"
-                              data-target="#messages"
-                              type="button"
+                              href="#nav-statistic"
                               role="tab"
-                              aria-controls="messages"
+                              aria-controls="nav-statistic"
                               aria-selected="false"
+                              >Statistic</a
                            >
-                              Statistic
-                           </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                           <button
-                              class="nav-link"
-                              id="settings-tab"
+                           <a
+                              class="nav-item nav-link"
+                              id="nav-partners-tab"
                               data-toggle="tab"
-                              data-target="#settings"
-                              type="button"
+                              href="#nav-partners"
                               role="tab"
-                              aria-controls="settings"
+                              aria-controls="nav-partners"
                               aria-selected="false"
+                              >Last partners invest</a
                            >
-                              Last partners invest
-                           </button>
-                        </li>
-                     </ul>
-
-                     <div class="tab-content">
+                        </div>
+                     </nav>
+                     <div class="tab-content" id="home-tabsContent">
                         <div
-                           class="tab-pane"
-                           id="home"
+                           class="tab-pane fade show active"
+                           id="open-invest"
                            role="tabpanel"
-                           aria-labelledby="home-tab"
+                           aria-labelledby="open-invest-tab"
                         >
-                           <div class="card p-2">
+                           <div class="table-wrap">
                               <table class="table">
                                  <thead>
                                     <tr>
@@ -478,12 +463,12 @@
                            </div>
                         </div>
                         <div
-                           class="tab-pane"
-                           id="profile"
+                           class="tab-pane fade"
+                           id="nav-transactions"
                            role="tabpanel"
-                           aria-labelledby="profile-tab"
+                           aria-labelledby="nav-transactions-tab"
                         >
-                           <div class="card p-2">
+                           <div class="table-wrap">
                               <table class="table">
                                  <tbody>
                                     <tr>
@@ -520,12 +505,12 @@
                            </div>
                         </div>
                         <div
-                           class="tab-pane"
-                           id="messages"
+                           class="tab-pane fade"
+                           id="nav-statistic"
                            role="tabpanel"
-                           aria-labelledby="messages-tab"
+                           aria-labelledby="nav-statistic-tab"
                         >
-                           <div class="card p-2">
+                           <div class="table-wrap">
                               <table class="table">
                                  <tbody>
                                     <tr>
@@ -562,12 +547,12 @@
                            </div>
                         </div>
                         <div
-                           class="tab-pane"
-                           id="settings"
+                           class="tab-pane fade"
+                           id="nav-partners"
                            role="tabpanel"
-                           aria-labelledby="settings-tab"
+                           aria-labelledby="nav-partners-tab"
                         >
-                           <div class="card p-2">
+                           <div class="table-wrap">
                               <table class="table">
                                  <tbody>
                                     <tr>
