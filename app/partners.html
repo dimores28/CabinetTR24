@@ -2,7 +2,9 @@
    <div class="container substrate">
       <p class="h1 mt-5">
          <span>Partners</span>
-         <button type="button" class="btn btn-outline-dark ml-2  refs">Ref</button>
+         <button type="button" class="btn btn-outline-danger ml-2 refs">
+            Ref
+         </button>
       </p>
 
       <div class="row mt-5">
@@ -32,20 +34,33 @@
             </div>
             <div>
                <p class="mt-3" role="alert">Choose voice acting</p>
-               <div class="d-flex justify-content-between" >
+               <div class="d-flex justify-content-between">
                   <div>
-                     <button type="button" class="btn btn-dark btn-sm voice-btn">
+                     <button
+                        type="button"
+                        class="btn btn-dark btn-sm voice-btn"
+                     >
                         eng
                      </button>
-                     <button type="button" class="btn btn-dark btn-sm voice-btn">
+                     <button
+                        type="button"
+                        class="btn btn-dark btn-sm voice-btn"
+                     >
                         ru
                      </button>
-                     <button type="button" class="btn btn-dark btn-sm voice-btn">
+                     <button
+                        type="button"
+                        class="btn btn-dark btn-sm voice-btn"
+                     >
                         中國人
                      </button>
                   </div>
 
-                  <button type="button" class="btn btn-dark btn-sm">
+                  <button
+                     type="button"
+                     class="btn btn-dark btn-sm"
+                     style="min-width: 124px; max-height: 43px"
+                  >
                      Open pdf
                   </button>
                </div>
@@ -56,66 +71,104 @@
       <div class="mt-5">
          <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="partners-tab" data-toggle="tab" data-target="#partners" type="button" role="tab" aria-controls="partners" aria-selected="true">My partners</button>
-              <button class="nav-link" id="partnersStatistics-tab" data-toggle="tab" data-target="#partnersStatistics" type="button" role="tab" aria-controls="partnersStatistics" aria-selected="false">Statistics my partners</button>
+               <button
+                  class="nav-link active"
+                  id="partners-tab"
+                  data-toggle="tab"
+                  data-target="#partners"
+                  type="button"
+                  role="tab"
+                  aria-controls="partners"
+                  aria-selected="true"
+                  style="margin-bottom: -3px"
+               >
+                  My partners
+               </button>
+               <button
+                  class="nav-link"
+                  id="partnersStatistics-tab"
+                  data-toggle="tab"
+                  data-target="#partnersStatistics"
+                  type="button"
+                  role="tab"
+                  aria-controls="partnersStatistics"
+                  aria-selected="false"
+                  style="margin-bottom: -3px"
+               >
+                  Statistics my partners
+               </button>
             </div>
-          </nav>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="partners" role="tabpanel" aria-labelledby="partners-tab">
-               <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">Mail</th>
-                      <th scope="col">Total invest</th>
-                      <th scope="col">Total profit</th>
-                      <th scope="col">My profit</th>
-                      <th scope="col">Date start</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">svetastr@ya.ru</th>
-                      <td>500$</td>
-                      <td>145$</td>
-                      <td>29$</td>
-                      <td>12.01.22</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">sd@gmail.com</th>
-                      <td>100$</td>
-                      <td>54$</td>
-                      <td>10.8$</td>
-                      <td>01.12.23;</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">23bst@mail.ru</th>
-                      <td>4000$</td>
-                      <td>1100$</td>
-                      <td>220$</td>
-                      <td>01.11.23</td>
-                    </tr>
-                  </tbody>
-                </table>
+         </nav>
+         <div class="tab-content" id="nav-tabContent">
+            <div
+               class="tab-pane fade show active"
+               id="partners"
+               role="tabpanel"
+               aria-labelledby="partners-tab"
+            >
+               <div class="table-wrap">
+                  <table class="table">
+                     <thead>
+                        <tr>
+                           <th scope="col">Mail</th>
+                           <th scope="col">Total invest</th>
+                           <th scope="col">Total profit</th>
+                           <th scope="col">My profit</th>
+                           <th scope="col">Date start</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <th scope="row">svetastr@ya.ru</th>
+                           <td>500$</td>
+                           <td>145$</td>
+                           <td>29$</td>
+                           <td>12.01.22</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">sd@gmail.com</th>
+                           <td>100$</td>
+                           <td>54$</td>
+                           <td>10.8$</td>
+                           <td>01.12.23;</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">23bst@mail.ru</th>
+                           <td>4000$</td>
+                           <td>1100$</td>
+                           <td>220$</td>
+                           <td>01.11.23</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
             </div>
-            <div class="tab-pane fade" id="partnersStatistics" role="tabpanel" aria-labelledby="partnersStatistics-tab">
-               <table class="table">
-                  <tbody>
-                    <tr>
-                      <th scope="row">Turnover 1st line</th>
-                      <td>5025$</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Turnover all team</th>
-                      <td>40283$</td>
-                    </tr>
-                    <tr>
-                     <th scope="row">My profit</th>
-                     <td>602$</td>
-                   </tr>
-                  </tbody>
-                </table>
+            <div
+               class="tab-pane fade"
+               id="partnersStatistics"
+               role="tabpanel"
+               aria-labelledby="partnersStatistics-tab"
+            >
+               <div class="table-wrap">
+                  <table class="table">
+                     <tbody>
+                        <tr>
+                           <th scope="row">Turnover 1st line</th>
+                           <td>5025$</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Turnover all team</th>
+                           <td>40283$</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">My profit</th>
+                           <td>602$</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
             </div>
-          </div>
+         </div>
       </div>
 
       <button type="button" id="problemsBtn" class="btn btn-warning mb-2 mt-5">
@@ -125,10 +178,9 @@
 </div>
 
 <script>
-   $('.refs').on('click', function() {
+   $('.refs').on('click', function () {
       $('#liveToast').toast('show');
    });
 
    $('#nav-tab #partners-tab').tab('show');
-
 </script>

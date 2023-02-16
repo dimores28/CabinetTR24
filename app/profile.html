@@ -251,29 +251,29 @@
          </div>
          <div class="modal-body">
             <div class="modal-content p-3">
-               <div class="form-inline align-items-start mt-4">
-                  <div
-                     class="form-group d-flex flex-column align-items-start mb-2"
-                  >
-                     <label for="emailConfirmationCode" class="sr-only"
-                        >Confirmation code</label
-                     >
-                     <input
-                        type="text"
-                        class="form-control"
-                        id="emailConfirmationCode"
-                        placeholder="Confirmation code"
-                     />
-                     <a href="#" class="send-code mt-1 mb-2">
-                        Resend code to email
-                     </a>
-                  </div>
-                  <button
-                     type="submit"
-                     class="btn btn-primary btn-primary_mt mb-2 ml-1"
-                  >
-                     Confirm
-                  </button>
+               <div class="align-items-start mt-2">
+                  <form>
+                     <div class="form-group">
+                        <label for="emailConfirmationCode"
+                           >Confirmation code</label
+                        >
+                        <input
+                           type="text"
+                           class="form-control"
+                           id="emailConfirmationCode"
+                           aria-describedby="emailConfirmationCodeHelp"
+                           placeholder="Confirmation code"
+                        />
+                        <small id="emailHelp" class="form-text text-muted">
+                           <a href="#" class="send-code mt-1 mb-2">
+                              Resend code to email
+                           </a>
+                        </small>
+                     </div>
+                     <button type="submit" class="btn btn-primary">
+                        Confirm
+                     </button>
+                  </form>
                </div>
 
                <button
