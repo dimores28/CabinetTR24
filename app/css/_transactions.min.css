@@ -1,2 +1,2 @@
-.transactions-tables a:hover{text-decoration:none}
+.transactions-tables a:hover{text-decoration:none}.filters-btn{position:relative;display:inline-block}#sandbox-container{position:absolute;opacity:0;display:-webkit-box;display:-ms-flexbox;display:flex;top:0;right:0;height:10px;z-index:-5}#sandbox-container input{width:40px}.page-link{color:#fff;background:#eb00ff}.page-link:active,.page-link:focus,.page-link:hover{color:#fff;background:#f691ff}
 /*# sourceMappingURL=../maps/_transactions.min.css.map */

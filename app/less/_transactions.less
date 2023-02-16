@@ -3,3 +3,35 @@
         text-decoration: none;
     }
 }
+
+.filters-btn {
+    position: relative;
+    display: inline-block;
+}
+
+#sandbox-container {
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    top: 0;
+    right: 0;
+    height: 10px;
+    z-index: -5;
+
+    input {
+        width: 40px;
+    }
+}
+
+.page-link {
+    color: #FFFFFF;
+    background: #EB00FF;
+    transition: all 0.4 ease-out;
+}
+
+.page-link:hover,
+.page-link:focus,
+.page-link:active {
+  color: #FFFFFF;
+  background: #F691FF;
+}

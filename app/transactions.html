@@ -21,21 +21,22 @@
                Partners profit
             </button>
          </div>
-         <div class="filters-data">
-            <button type="button" class="btn btn-primary mb-1">7d</button>
-            <button type="button" class="btn btn-primary mb-1">30d</button>
-            <button type="button" class="btn btn-primary mb-1">90d</button>
-            <button type="button" class="btn btn-primary mb-1">All</button>
-            <button type="button" class="btn btn-primary mb-1">Settings</button>
-         </div>
-
-         <div class="span5 col-md-5" id="sandbox-container">
-            <div class="input-daterange input-group" id="datepicker">
-               <input type="text" class="input-sm form-control" name="start" />
-               <span class="input-group-addon">to</span>
-               <input type="text" class="input-sm form-control" name="end" />
-            </div>
-         </div>
+          <div class="filters-btn">
+              <div class="filters-data">
+                  <button type="button" class="btn btn-primary mb-1">7d</button>
+                  <button type="button" class="btn btn-primary mb-1">30d</button>
+                  <button type="button" class="btn btn-primary mb-1">90d</button>
+                  <button type="button" class="btn btn-primary mb-1">All</button>
+                  <button type="button" class="btn btn-primary mb-1" id="dateRange">Settings</button>
+              </div>
+      
+              <div class="span5" id="sandbox-container">
+                  <div class="input-daterange input-group" id="datepicker">
+                    <input type="text" class="input-sm form-control" name="start" />
+                    <input type="text" class="input-sm form-control" id="datapicker" name="end" />
+                  </div>
+              </div>
+          </div>
       </div>
 
       <nav class="mt-5">
@@ -442,74 +443,92 @@
             aria-labelledby="nav-profitinvest-tab"
          >
             <div class="table-wrap">
-               <h4><a href="#">id423</a></h4>
+               <h4><a href="#" data-toggle="modal" data-target="#exampleModalLg">id423</a></h4>
                <table class="table">
-                  <thead>
-                     <tr>
-                        <th scope="col">Total USD</th>
-                        <th scope="col">Open date</th>
-                        <th scope="col">My profit $</th>
-                        <th scope="col">Profit leader</th>
-                        <th scope="col">Profit trade24</th>
-                        <th scope="col">Next % profit</th>
-                     </tr>
-                  </thead>
                   <tbody>
+                    <tr>
+                      <th scope="row">Total USD</th>
+                      <td>500$</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Open date</th>
+                      <td>01.12.2023</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">My profit $</th>
+                      <td>214$</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Profit leader</th>
+                      <td>42$</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Profit trade24</th>
+                      <td>112$</td>
+                    </tr>
                      <tr>
-                        <th scope="row">500$</th>
-                        <td>01.12.2023</td>
-                        <td>214$</td>
-                        <td>42$</td>
-                        <td>112$</td>
-                        <td>3.5923%</td>
+                       <th scope="row">Next % profit</th>
+                      <td>3.5923%</td>
                      </tr>
                   </tbody>
                </table>
 
-               <h4><a href="#">id653</a></h4>
+               <h4><a href="#" data-toggle="modal" data-target="#exampleModalLg">id423</a></h4>
                <table class="table">
-                  <thead>
-                     <tr>
-                        <th scope="col">Total USD</th>
-                        <th scope="col">Open date</th>
-                        <th scope="col">My profit $</th>
-                        <th scope="col">Profit leader</th>
-                        <th scope="col">Profit trade24</th>
-                        <th scope="col">Next % profit</th>
-                     </tr>
-                  </thead>
                   <tbody>
+                    <tr>
+                      <th scope="row">Total USD</th>
+                      <td>900$</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Open date</th>
+                      <td>01.03.2024</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">My profit $</th>
+                      <td>834$</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Profit leader</th>
+                      <td>196.8$</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Profit trade24</th>
+                      <td>1237$</td>
+                    </tr>
                      <tr>
-                        <th scope="row">500$</th>
-                        <td>01.12.2023</td>
-                        <td>214$</td>
-                        <td>42$</td>
-                        <td>112$</td>
-                        <td>3.5923%</td>
+                       <th scope="row">Next % profit</th>
+                      <td>3.5923%</td>
                      </tr>
                   </tbody>
                </table>
 
-               <h4><a href="#">id783</a></h4>
+               <h4><a href="#" data-toggle="modal" data-target="#exampleModalLg">id423</a></h4>
                <table class="table">
-                  <thead>
-                     <tr>
-                        <th scope="col">Total USD</th>
-                        <th scope="col">Open date</th>
-                        <th scope="col">My profit $</th>
-                        <th scope="col">Profit leader</th>
-                        <th scope="col">Profit trade24</th>
-                        <th scope="col">Next % profit</th>
-                     </tr>
-                  </thead>
                   <tbody>
+                    <tr>
+                      <th scope="row">Total USD</th>
+                      <td>5500$</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Open date</th>
+                      <td>01.02.2025</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">My profit $</th>
+                      <td>500$</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Profit leader</th>
+                      <td>100$</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Profit trade24</th>
+                      <td>624$</td>
+                    </tr>
                      <tr>
-                        <th scope="row">500$</th>
-                        <td>01.12.2023</td>
-                        <td>214$</td>
-                        <td>42$</td>
-                        <td>112$</td>
-                        <td>3.5923%</td>
+                       <th scope="row">Next % profit</th>
+                      <td>3.5923%</td>
                      </tr>
                   </tbody>
                </table>
@@ -611,4 +630,8 @@
 
 <script>
    $('#sandbox-container .input-daterange').datepicker('clearDates');
+
+   $('#dateRange').on('click', function() {
+    $('#datapicker').focus();
+   });
 </script>
