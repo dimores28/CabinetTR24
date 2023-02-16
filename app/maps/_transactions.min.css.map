@@ -1,0 +1,1 @@
+{"version":3,"sources":["_transactions.less"],"names":[],"mappings":"AAAA,6BAEQ,gBAAA","file":"../less/_transactions.min.css","sourcesContent":[".transactions-tables {\r\n    a:hover {\r\n        text-decoration: none;\r\n    }\r\n}"]}

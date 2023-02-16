@@ -16,6 +16,7 @@ const sourcemaps   = require('gulp-sourcemaps');
 const jsFile =['app/lib/jquery-3.3.1.min.js', 
 'app/lib/bootstrap.bundle.min.js',
 'app/lib/clipboard.min.js',
+'app/lib/bootstrap-datepicker.js',
 'app/js/script.js'
 ];
 
