@@ -83,7 +83,7 @@ $('#depositModalBtn').on('click', function() {
   let content = `<div class="modal-content p-3">
                     <h4>
                       Wallet balance: 
-                      <span class="text-muted">100$</span>
+                      <span class="text-pinck">100$</span>
                     </h4>
                   <div>
                     <p class="mt-1">
@@ -135,7 +135,7 @@ $('#openDepositModal').on('click', function() {
   let content = `<div class="modal-content p-3">
                     <h4>
                       Wallet balance: 
-                      <span class="text-muted">100$</span>
+                      <span class="text-pinck">100$</span>
                     </h4>
                     <div>
                     <p class="mt-1">
@@ -188,7 +188,7 @@ $('#withdrawalModalBtn').on('click', function() {
   `<div class="modal-content p-3">
     <h4>
       Wallet balance: 
-      <span class="text-muted">100$</span>
+      <span class="text-pinck">100$</span>
     </h4>
     <div>
       <p class="mt-1">
@@ -255,7 +255,7 @@ $('#openWithdrawalModal').on('click', function() {
   `<div class="modal-content p-3">
     <h4>
       Wallet balance: 
-      <span class="text-muted">100$</span>
+      <span class="text-pinck">100$</span>
     </h4>
     <div>
       <p class="mt-1">
@@ -322,7 +322,7 @@ $('#balanceNavBtn').on('click', function() {
   `<div class="modal-content p-3">
     <h4>
       Wallet balance: 
-      <span class="text-muted">100$</span>
+      <span class="text-pinck">100$</span>
     </h4>
   </div>`;
 
@@ -334,7 +334,7 @@ $('#transactionsModalBtn').on('click', function() {
   `<div class="modal-content p-3">
     <h4>
       Wallet balance: 
-      <span class="text-muted">100$</span>
+      <span class="text-pinck">100$</span>
     </h4>
 
     <div class="mt-4 transactions">
