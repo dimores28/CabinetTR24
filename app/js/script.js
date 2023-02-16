@@ -125,7 +125,7 @@ $('#depositModalBtn').on('click', function() {
                       <input type="number" class="form-control" id="amountMoney" placeholder="Enter 1-1468950">
                     </div>
                   </div>
-                  <button type="button" id="problemsBtn" class="btn btn-warning mt-4">Are you problems?</button>
+                  <button type="button" id="problemsBtn" class="btn btn-warning mt-4" onclick="$('#problemModel').modal('show')">Are you problems?</button>
                 </div>`;
 
   $('.modal-form').html(content);
@@ -177,7 +177,7 @@ $('#openDepositModal').on('click', function() {
                       <input type="number" class="form-control" id="amountMoney" placeholder="Enter 1-1468950">
                     </div>
                   </div>
-                  <button type="button" id="problemsBtn" class="btn btn-warning mt-4">Are you problems?</button>
+                  <button type="button" id="problemsBtn" class="btn btn-warning mt-4" onclick="$('#problemModel').modal('show')">Are you problems?</button>
                 </div>`;
 
   $('.modal-form').html(content);
@@ -244,7 +244,9 @@ $('#withdrawalModalBtn').on('click', function() {
         <button type="button" class="btn btn-primary">Send</button>
       </div>
     </div>
-    <button type="button" id="problemsBtn" class="btn btn-warning mt-4">Are you problems?</button>
+    <button type="button" id="problemsBtn" class="btn btn-warning mt-4" onclick="$('#problemModel').modal('show')">
+      Are you problems?
+    </button>
   </div>`;
 
   $('.modal-form').html(content);
@@ -311,7 +313,9 @@ $('#openWithdrawalModal').on('click', function() {
         <button type="button" class="btn btn-primary">Send</button>
       </div>
     </div>
-    <button type="button" id="problemsBtn" class="btn btn-warning mt-4">Are you problems?</button>
+    <button type="button" id="problemsBtn" class="btn btn-warning mt-4" onclick="$('#problemModel').modal('show')">
+      Are you problems?
+    </button>
   </div>`;
 
   $('.modal-form').html(content);
@@ -377,3 +381,8 @@ $('#transactionsModalBtn').on('click', function() {
 
   $('.modal-form').html(content);
 });
+
+$('#problemsBtn').on('click', function() {
+  $('#problemModel').modal('show');
+});
+

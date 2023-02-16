@@ -351,6 +351,7 @@
                   type="button"
                   id="problemsBtn"
                   class="btn btn-warning mt-5"
+                  onclick="$('#problemModel').modal('show')"
                >
                   Are you problems?
                </button>
@@ -459,5 +460,9 @@
 
    $('#investTabContent a').on('click', function (e) {
       e.preventDefault();
+   });
+
+   $('#problemsBtn').on('click', function() {
+      $('#problemModel').modal('show');
    });
 </script>
