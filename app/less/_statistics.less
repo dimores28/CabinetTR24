@@ -1,8 +1,8 @@
 .filteers {
 
-    &__btn {
-        width: 60px;
-    }
+    // &__btn {
+    //     width: 60px;
+    // }
 
     &__label {
         font-weight: 500;
@@ -16,18 +16,22 @@
 }
 
 .my-profit {
+    color: #fff;
     margin-top: -1.3rem;
+    background: linear-gradient(110.74deg, rgba(235, 0, 255, 0.75) -17.43%, rgba(47, 13, 255, 0.75) 108.14%);
+    border-radius: 12px;
+    font-size: 40px;
 }
 
 #statisticsTab {
 
     .nav-link {
-        color: #000;
+        color: #060028
     }
 
     .nav-link:hover,
     .nav-link.active {
-        color: #00000098;
+        color: #060028
     }
 }
 
@@ -37,11 +41,39 @@
     }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 768px) {
     .filteers {
         &__settings-btn {
             margin-left: 78px;
             margin-top: 10px;
         }
+    }
+
+    .my-profit {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 379px) {
+    .filteers {
+
+        &__group-btn {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__group-btn button {
+            margin: 0 5px;
+            margin-bottom: 10px;
+        }
+
+        &__settings-btn {
+            margin-left: 0;
+            margin-top: 0;
+        }
+    }
+
+    .my-profit {
+        font-size: 34px;
     }
 }
