@@ -376,6 +376,9 @@ $('#transactionsModalBtn').on('click', function() {
           </tr>
         </tbody>
       </table>
+      <div class="text-right">
+          <a href="#" class="btn btn-outline-danger" role="button">View all</a>
+      </div>
     </div>
   </div>`;
 
