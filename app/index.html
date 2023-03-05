@@ -223,184 +223,212 @@
       </aside>
 
       <main class="main" id="main">
-         <div class="container substrate">
-            <p class="h1 mt-5">Home</p>
-            <div class="home-nav">
-               <p class="h3">
-                  Balance: <span class="text-pinck">0.00 $</span>
-               </p>
-               <div role="button group" aria-label="Button group">
-                  <button type="button" id="openDepositModal" class="btn btn-primary mr-2 mb-2 home-nav__btn"
+         <div class="container">
+            <div class="main-heading">
+               <h1 class="section-heading">Home</h1>
+               <div class="main-btn-group">
+                  <button type="button" id="openDepositModal" class="main-buttons main-buttons_big  mr-2"
                      data-toggle="modal" data-target="#exampleModal">
                      Deposit
                   </button>
-                  <button type="button" id="openWithdrawalModal" class="btn btn-primary mr-2 mb-2 home-nav__btn"
+                  <button type="button" id="openWithdrawalModal" class="secondary-buttons mr-2"
                      data-toggle="modal" data-target="#exampleModal">
                      Withdrawal
                   </button>
-                  <button type="button" class="btn btn-primary mr-2 mb-2 home-nav__btn refs">
+                  <button type="button" class="secondary-buttons refs">
                      Ref
-                  </button>
-                  <button type="button" class="btn btn-dark mr-2 mb-2 home-nav__btn">
-                     More
                   </button>
                </div>
             </div>
-         </div>
+            <div class="deteils-block">
+               <a href="#" class="linck"><span>More</span>&#8594;</a>
+            </div>
 
-         <div class="container substrate mt-5">
-            <div class="row justify-content-between">
-               <div class="col-sm-8 col-md-4 mb-5">
-                  <div class="card card-profit">
-                     <div class="card-profit__header">
-                        <h5 class="card-title">All profit</h5>
-                        <h5 class="card-title">% / $</h5>
-                     </div>
-                     <div class="card-body card-profit__body">
-                        <p class="card-text">34% / 1200$</p>
-                        <div class="text-right">
-                           <a href="#" class="btn card-profit__btn">Shere</a>
+            <div class="row">  
+                  <div class="col-12 col-sm-6 col-md-5 col-xl-4 mb-4">
+                     <div class="card-heading">Balance</div>
+                     <div class="card card-balance">
+                        <div class="card__header">
+                           <h5 class="card__title">$</h5>
+                        </div>
+                        <div class="card__body">
+                           <p class="card__sum">1,820</p>
+                           <img src="images/card/trend.png" class="card__img" alt="progress" width="106" height="69">
+                        </div>
+                        <div class="card__footer">
+                           <div class="card-balance__cell">
+                              <p>Profit</p>
+                              <p>34%</p>
+                           </div>
+                           <div class="card-balance__cell card-balance__cell-centr">
+                              <p>Profit amount</p>
+                              <p>1200$</p>
+                           </div>
                         </div>
                      </div>
                   </div>
-               </div>
-               <div class="col-sm-12 col-md-7">
-                  <nav>
-                     <div class="nav nav-tabs" id="home-tabs" role="tablist">
-                        <a class="nav-item nav-link active" id="open-invest-tab" data-toggle="tab" href="#open-invest"
-                           role="tab" aria-controls="open-invest" aria-selected="true">Open invest</a>
-                        <a class="nav-item nav-link" id="nav-transactions-tab" data-toggle="tab"
-                           href="#nav-transactions" role="tab" aria-controls="nav-transactions"
-                           aria-selected="false">Transactions</a>
-                        <a class="nav-item nav-link" id="nav-statistic-tab" data-toggle="tab" href="#nav-statistic"
-                           role="tab" aria-controls="nav-statistic" aria-selected="false">Statistic</a>
-                        <a class="nav-item nav-link" id="nav-partners-tab" data-toggle="tab" href="#nav-partners"
-                           role="tab" aria-controls="nav-partners" aria-selected="false">Last partners invest</a>
-                     </div>
-                  </nav>
-                  <div class="tab-content" id="home-tabsContent">
-                     <div class="tab-pane fade show active" id="open-invest" role="tabpanel"
-                        aria-labelledby="open-invest-tab">
-                        <div class="table-wrap">
-                           <table class="table">
-                              <thead>
-                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                 </tr>
-                              </thead>
-                              <tbody>
-                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>100$</td>
-                                    <td>20.02.23</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">2</th>
-                                    <td>5000$</td>
-                                    <td>12.01.22</td>
-                                 </tr>
-                                 <tr>
-                                    <th scope="row">3</th>
-                                    <td>15000$</td>
-                                    <td>14.12.22</td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                           <div class="text-right">
-                              <a href="#" class="btn btn-outline-danger" role="button">View all</a>
+
+                  <div class="col-12 col-sm-6 col-md-5 col-xl-4 mb-4">
+                     <div class="card-heading">All profit</div>
+                     <div class="card card-profit">
+                        <div class="card__header card-profit__header">
+                           <h5 class="card__title">$</h5>
+                        </div>
+                        <div class="card__body">
+                           <p class="card__sum">1,120</p>
+                           <img src="images/card/trend.png" class="card__img" alt="progress" width="106" height="69">
+                        </div>
+                        <div class="card__footer card-profit__footer">
+                           <div class="card-profit__cell">
+                              <p>%</p>
+                              <p>34</p>
                            </div>
+                           <a href="#" class="card-profit__btn">Share</a>
                         </div>
                      </div>
-                     <div class="tab-pane fade" id="nav-transactions" role="tabpanel"
-                        aria-labelledby="nav-transactions-tab">
-                        <div class="table-wrap">
-                           <table class="table">
-                              <tbody>
-                                 <tr>
-                                    <th>deposit</th>
-                                    <td>200$</td>
-                                    <td>01.09.22</td>
-                                 </tr>
-                                 <tr>
-                                    <th>withdrawal</th>
-                                    <td>50$</td>
-                                    <td>01.12.22</td>
-                                 </tr>
-                                 <tr>
-                                    <th>partners bonus</th>
-                                    <td>144$</td>
-                                    <td>03.08.22</td>
-                                 </tr>
-                                 <tr>
-                                    <th>open invest</th>
-                                    <td>150$</td>
-                                    <td>01.02.22</td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                           <div class="text-right">
-                              <a href="#" class="btn btn-outline-danger" role="button">View all</a>
-                           </div>
-                        </div>
+                  </div>
+            </div>
+         </div>
+
+         <div class="container activity">
+            <h2 class="section-heading">ACTIVITY</h2>
+            <div class="tab-back">
+               <nav>
+                  <div class="nav nav-tabs" id="home-tabs" role="tablist">
+                     <a class="nav-item nav-link active" id="open-invest-tab" data-toggle="tab" href="#open-invest"
+                        role="tab" aria-controls="open-invest" aria-selected="true">Open invest</a>
+                     <a class="nav-item nav-link" id="nav-transactions-tab" data-toggle="tab"
+                        href="#nav-transactions" role="tab" aria-controls="nav-transactions"
+                        aria-selected="false">Transactions</a>
+                     <a class="nav-item nav-link" id="nav-statistic-tab" data-toggle="tab" href="#nav-statistic"
+                        role="tab" aria-controls="nav-statistic" aria-selected="false">Statistic</a>
+                     <a class="nav-item nav-link" id="nav-partners-tab" data-toggle="tab" href="#nav-partners"
+                        role="tab" aria-controls="nav-partners" aria-selected="false">Last partners invest</a>
+
+                     <a href="#" class="linck view-linck"><span>View all</span>&#8594;</a>
+                  </div>
+                 
+               </nav>
+               <div class="tab-content" id="home-tabsContent">
+                  <div class="tab-pane fade show active" id="open-invest" role="tabpanel"
+                     aria-labelledby="open-invest-tab">
+                     <div class="table-wrap">
+                        <table class="table">
+                           <thead>
+                              <tr>
+                                 <th scope="col"></th>
+                                 <th scope="col"></th>
+                                 <th scope="col">First</th>
+                                 <th scope="col">Last</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <th scope="row" class="img-ceill">
+                                    <img src="images/home/eth.png" class="crypto-icon" alt="crypto icon" width="32" height="32">
+                                 </th>
+                                 <td>Ethereum Purchased</td>
+                                 <td>100$</td>
+                                 <td>20.02.23</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row" class="img-ceill">
+                                    <img src="images/home/btc.png" class="crypto-icon" alt="crypto icon" width="32" height="32">
+                                 </th>
+                                 <td>Bitcoin Purchased</td>
+                                 <td>5000$</td>
+                                 <td>12.01.22</td>
+                              </tr>
+                              <tr>
+                                 <th scope="row" class="img-ceill">
+                                    <img src="images/home/btc.png" class="crypto-icon" alt="crypto icon" width="32" height="32">
+                                 </th>
+                                 <td>Bitcoin Purchased</td>
+                                 <td>15000$</td>
+                                 <td>14.12.22</td>
+                              </tr>
+                           </tbody>
+                        </table>
                      </div>
-                     <div class="tab-pane fade" id="nav-statistic" role="tabpanel" aria-labelledby="nav-statistic-tab">
-                        <div class="table-wrap">
-                           <table class="table">
-                              <tbody>
-                                 <tr>
-                                    <th>My invest:</th>
-                                    <td>500$</td>
-                                 </tr>
-                                 <tr>
-                                    <th>Profit invest:</th>
-                                    <td>100$</td>
-                                 </tr>
-                                 <tr>
-                                    <th>Team invest:</th>
-                                    <td>400$</td>
-                                 </tr>
-                                 <tr>
-                                    <th>Profit team:</th>
-                                    <td>400$</td>
-                                 </tr>
-                                 <tr>
-                                    <th>All withdrawal:</th>
-                                    <td>100$</td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                           <div class="text-right">
-                              <a href="#" class="btn btn-outline-danger" role="button">View all</a>
-                           </div>
-                        </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-transactions" role="tabpanel"
+                     aria-labelledby="nav-transactions-tab">
+                     <div class="table-wrap">
+                        <table class="table">
+                           <tbody>
+                              <tr>
+                                 <th>deposit</th>
+                                 <td>200$</td>
+                                 <td>01.09.22</td>
+                              </tr>
+                              <tr>
+                                 <th>withdrawal</th>
+                                 <td>50$</td>
+                                 <td>01.12.22</td>
+                              </tr>
+                              <tr>
+                                 <th>partners bonus</th>
+                                 <td>144$</td>
+                                 <td>03.08.22</td>
+                              </tr>
+                              <tr>
+                                 <th>open invest</th>
+                                 <td>150$</td>
+                                 <td>01.02.22</td>
+                              </tr>
+                           </tbody>
+                        </table>
                      </div>
-                     <div class="tab-pane fade" id="nav-partners" role="tabpanel" aria-labelledby="nav-partners-tab">
-                        <div class="table-wrap">
-                           <table class="table">
-                              <tbody>
-                                 <tr>
-                                    <th>str@ya.ru</th>
-                                    <td>500$</td>
-                                    <td>12.01.22</td>
-                                 </tr>
-                                 <tr>
-                                    <th>jsd@gmail.com</th>
-                                    <td>100$</td>
-                                    <td>01.12.23</td>
-                                 </tr>
-                                 <tr>
-                                    <th>bst@mail.ru</th>
-                                    <td>400$</td>
-                                    <td>01.11.23</td>
-                                 </tr>
-                              </tbody>
-                           </table>
-                           <div class="text-right">
-                              <a href="#" class="btn btn-outline-danger" role="button">View all</a>
-                           </div>
-                        </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-statistic" role="tabpanel" aria-labelledby="nav-statistic-tab">
+                     <div class="table-wrap">
+                        <table class="table">
+                           <tbody>
+                              <tr>
+                                 <th>My invest:</th>
+                                 <td>500$</td>
+                              </tr>
+                              <tr>
+                                 <th>Profit invest:</th>
+                                 <td>100$</td>
+                              </tr>
+                              <tr>
+                                 <th>Team invest:</th>
+                                 <td>400$</td>
+                              </tr>
+                              <tr>
+                                 <th>Profit team:</th>
+                                 <td>400$</td>
+                              </tr>
+                              <tr>
+                                 <th>All withdrawal:</th>
+                                 <td>100$</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-partners" role="tabpanel" aria-labelledby="nav-partners-tab">
+                     <div class="table-wrap">
+                        <table class="table">
+                           <tbody>
+                              <tr>
+                                 <th>str@ya.ru</th>
+                                 <td>500$</td>
+                                 <td>12.01.22</td>
+                              </tr>
+                              <tr>
+                                 <th>jsd@gmail.com</th>
+                                 <td>100$</td>
+                                 <td>01.12.23</td>
+                              </tr>
+                              <tr>
+                                 <th>bst@mail.ru</th>
+                                 <td>400$</td>
+                                 <td>01.11.23</td>
+                              </tr>
+                           </tbody>
+                        </table>
                      </div>
                   </div>
                </div>
@@ -428,7 +456,7 @@
             </div>
             <div class="toast-body">
                <input id="copyTarget" value="https://github.com/zenorocha/clipboard.js.git" class="toast-text mr-1" />
-               <button type="button" class="toast-btn" id="copyToastBtn" aria-label="Copy button"
+               <button type="button" class="toast-btn copyToastBtn" id="copyToastBtn" aria-label="Copy button"
                   data-clipboard-target="#copyTarget" data-toggle="tooltip" data-placement="top" title="Copy to ref">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                      class="bi bi-clipboard" viewBox="0 0 16 16">

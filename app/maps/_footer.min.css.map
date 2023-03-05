@@ -1,1 +1,1 @@
-{"version":3,"sources":["_footer.less"],"names":[],"mappings":"AAAA,QACG,UAAA,OACA,QAAA,KAAA,KAAA,KACA,WAAA","file":"../less/_footer.min.css","sourcesContent":[".footer {\r\n   grid-area: footer;\r\n   padding: 25px 20px 20px;\r\n   margin-top: 30px;\r\n}"]}
+{"version":3,"sources":["_footer.less"],"names":[],"mappings":"AAAA,QACG,UAAA,OACA,QAAA,KAAA","file":"../less/_footer.min.css","sourcesContent":[".footer {\r\n   grid-area: footer;\r\n   padding: 30px 20px;\r\n}"]}
