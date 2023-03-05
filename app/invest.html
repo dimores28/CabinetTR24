@@ -1,39 +1,59 @@
 <div class="main-alerts">
-   <div class="container substrate">
-      <p class="h1 mt-5">Investing</p>
-      <div class="row">
-         <div class="col-xl-5 col-md-6 col-sm-12 mb-4">
-            <div class="investment-column">
-               <p class="h3">Balance: <span class="text-pinck">0.00 $</span></p>
-               <div class="mt-4">
-                  <div class="form-group">
-                     <label for="investmentAmount">Investment amount</label>
-                     <input
-                        type="number"
-                        min="0"
-                        class="form-control"
-                        id="investmentAmount"
-                        placeholder="0.00"
-                     />
+   <div class="container">
+      <h2 class="section-heading">Investing</h2>
+      <div class="invest-grid">
+         <div class="card-1">
+            <div class="card-heading">Balance</div>
+            <div class="card card-balance">
+               <div class="card__header">
+                  <h5 class="card__title">$</h5>
+               </div>
+               <div class="card__body">
+                  <p class="card__sum">1,820</p>
+                  <img src="images/card/trend.png" class="card__img" alt="progress" width="106" height="69">
+               </div>
+               <div class="card__footer">
+                  <div class="card-balance__cell">
+                     <p>Profit</p>
+                     <p>34%</p>
                   </div>
-                  <button
-                     type="button"
-                     class="btn btn-primary mb-2"
-                     style="width: 159px"
-                  >
-                     Confirm
-                  </button>
-                  <button
-                     type="button"
-                     id="problemsBtn"
-                     class="btn btn-warning mb-2"
-                  >
-                     Are you problems?
-                  </button>
+                  <div class="card-balance__cell card-balance__cell-centr">
+                     <p>Profit amount</p>
+                     <p>1200$</p>
+                  </div>
                </div>
             </div>
          </div>
-         <div class="col-xl-7 col-md-6 col-sm-12 mb-4">
+
+         <div class="card-2">
+            <h5 class="card-heading invest-card-heading">Invest card</h5>
+            <div class="invest-card">
+               <h5 class="invest-card__header">Investment amount</h5>
+               <form>
+                  <div class="invest-card__body">
+                     <div class="form-group">
+                        <label for="amountInvestment">The amount of investment</label>
+                        <input type="text" class="form-control" id="amountInvestment" placeholder="0.00">
+                      </div>
+                  </div>
+                  <div class="invest-card__footer">
+                     <button type="button" id="problemsBtn" class="btn btn-warning" onclick="$('#problemModel').modal('show')">
+                        Are you problems?
+                      </button>
+                     <button type="submit" class="btn btn-primary">Confirm</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+
+         <div class="invest-baner">
+            <p class="invest-baner__text">
+               How to become a cool trader in 5 days
+            </p>
+            <a href="#" class="invest-baner__linck">Learn more</a>
+         </div>
+
+         <div class="video-card">
             <div class="invest-video">
                <video
                   poster="video/maxresdefault.jpg"
@@ -58,36 +78,13 @@
                </video>
             </div>
             <div>
-               <p class="mt-3" role="alert">Choose voice acting</p>
-               <div class="d-flex justify-content-between">
-                  <div>
-                     <button
-                        type="button"
-                        class="btn btn-warning btn-sm voice-btn mb-1"
-                     >
-                        eng
-                     </button>
-                     <button
-                        type="button"
-                        class="btn btn-warning btn-sm voice-btn mb-1"
-                     >
-                        ru
-                     </button>
-                     <button
-                        type="button"
-                        class="btn btn-warning btn-sm voice-btn mb-1"
-                     >
-                        中國人
-                     </button>
+               <div class="video-group-btn">
+                  <button class="print-btn">Open PDF</button>
+                  <div class="lang-btn-group">
+                     <span class="btn-label">Choose voice acting</span>
+                     <button class="lang-btn">Eng</button>
+                     <button class="lang-btn">Ru</button>
                   </div>
-
-                  <button
-                     type="button"
-                     class="btn btn-dark btn-sm mb-1"
-                     style="min-width: 124px; max-height: 43px"
-                  >
-                     Open pdf
-                  </button>
                </div>
             </div>
          </div>
