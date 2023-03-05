@@ -323,14 +323,15 @@ $('#transactionsModalBtn').on('click', function() {
     </h4>
 
     <div class="mt-4 transactions">
+      <a href="#" class="linck view-linck"><span>View all</span>&#8594;</a>
       <table class="table">
         <thead>
           <tr>
-            <th scope="col" style="border-bottom: 1px solid rgba(235, 0, 255, 0.75);">#</th>
-            <th scope="col" style="border-bottom: 1px solid rgba(235, 0, 255, 0.75);">Date</th>
-            <th scope="col" style="border-bottom: 1px solid rgba(235, 0, 255, 0.75);">Transactions</th>
-            <th scope="col" style="border-bottom: 1px solid rgba(235, 0, 255, 0.75);">Number coins</th>
-            <th scope="col" style="border-bottom: 1px solid rgba(235, 0, 255, 0.75);">Price</th>
+            <th scope="col" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">#</th>
+            <th scope="col" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">Date</th>
+            <th scope="col" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">Transactions</th>
+            <th scope="col" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">Number coins</th>
+            <th scope="col" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);">Price</th>
           </tr>
         </thead>
         <tbody>
@@ -357,9 +358,6 @@ $('#transactionsModalBtn').on('click', function() {
           </tr>
         </tbody>
       </table>
-      <div class="text-right">
-          <a href="#" class="btn btn-outline-danger" role="button">View all</a>
-      </div>
     </div>
   </div>`;
 

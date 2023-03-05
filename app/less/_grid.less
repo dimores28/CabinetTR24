@@ -49,6 +49,7 @@ body, html {
   animation: 1.5s linear infinite dlink;
 }
 
+.secondary-buttons-modal,
 .secondary-buttons {
   font-family: 'Poppins';
   font-style: normal;
@@ -61,6 +62,27 @@ body, html {
   padding: 10px 38px;
   background: #060026;
   border-radius: 8px;
+  transition: all 0.4s ease-in;
+}
+
+.secondary-buttons:hover,
+.secondary-buttons:focus,
+.secondary-buttons:active {
+  color: #FFFFFF;
+  background: #EB00FF;
+}
+
+.secondary-buttons-modal {
+  font-size: 16px;
+  padding: 14px 26px;
+  border-radius: 10px;
+}
+
+.secondary-buttons-modal:hover,
+.secondary-buttons-modal:focus,
+.secondary-buttons-modal:active {
+  color: #FFFFFF;
+  background: #EB00FF;
 }
 
 .service-buttons {
@@ -83,6 +105,28 @@ body, html {
 .service-buttons:active {
   background: #2d0dff44;
   border: 1px solid #2d0dff44;
+}
+
+.service-buttons-white {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2F0DFF;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  transition: all 0.4s ease-in;
+}
+
+.service-buttons-white:hover,
+.service-buttons-white:focus,
+.service-buttons-white:active {
+  background: #2F0DFF;
+  color: #FFFFFF;
 }
 
 .btn-primary {
@@ -132,7 +176,7 @@ body, html {
   letter-spacing: 0.015em;
   padding: 12px 27px;
   border-radius: 8px;
-  border: 2px solid #2F0DFF;
+
   transition: all 0.4s ease-in;
   background-color: transparent;
 }
@@ -141,8 +185,8 @@ body, html {
 .btn-warning:active,
 .btn-warning:focus {
   color: #fff;
-  background-color: #2F0DFF;
-  border: 2px solid #2F0DFF;
+  // background-color: #2F0DFF;
+  // border: 2px solid #2F0DFF;
 }
 
 .btn-outline-danger {
@@ -344,7 +388,12 @@ body, html {
 }
 
 .close {
-  color: #f8f9fa;
+  color: #fff;
+}
+
+.close:hover {
+  color: #ffffff72;
+  text-decoration: none;
 }
 
 .copyToastBtn {
@@ -384,3 +433,80 @@ body, html {
   text-decoration: none;
 
 }
+
+.modal-header {
+  color: #FFFFFF; 
+  border-bottom: none;
+
+  h5 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 35px;
+  }
+
+  background: #060026;
+}
+
+.modal-content {
+  background: #08003B;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.modal-form {
+  background: #080031;
+  border-radius: 10px;
+  border: none;
+  padding: 16px 18px;
+}
+
+.modal-form > .modal-content {
+  background: #080031;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+
+.custom-select {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: #060026 url('../images/icons/select_arrows.svg') 95% 60% no-repeat;
+  background-size: 10%;
+  border-radius: 10px;
+}
+
+.form-control {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: #060026;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.form-control:focus {
+  color: #FFFFFF;
+  background-color: #060026;;
+  border-color: #080031;
+}
+
+label {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
