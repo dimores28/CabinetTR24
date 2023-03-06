@@ -1,10 +1,10 @@
 <div class="main-alerts">
-   <div class="container substrate">
-      <p class="h1 mt-5">Transactions</p>
+   <div class="container">
+      <h2 class="section-heading">Transactions</h2>
 
       <div>
-         <div class="filters-operation-typp mb-4 mt-5">
-            <button type="button" class="btn btn-primary mb-1">Deposit</button>
+         <div class="filters-operation-typp mt-5">
+            <!-- <button type="button" class="btn btn-primary mb-1">Deposit</button>
             <button type="button" class="btn btn-primary mb-1">
                Withdrawal
             </button>
@@ -19,520 +19,566 @@
             </button>
             <button type="button" class="btn btn-primary mb-1">
                Partners profit
-            </button>
+            </button> -->
          </div>
-          <div class="filters-btn">
-              <div class="filters-data">
-                  <span class="filteers__label mr-3">Date:</span>
-                  <button type="button" class="btn btn-warning mb-1">7d</button>
-                  <button type="button" class="btn btn-warning mb-1">30d</button>
-                  <button type="button" class="btn btn-warning mb-1">90d</button>
-                  <button type="button" class="btn btn-warning mb-1">All</button>
-                  <button type="button" class="btn btn-dark mb-1" id="dateRange">Settings</button>
-              </div>
-      
-              <div class="span5" id="sandbox-container">
-                  <div class="input-daterange input-group" id="datepicker">
-                    <input type="text" class="input-sm form-control" name="start" />
-                    <input type="text" class="input-sm form-control" id="datapicker" name="end" />
-                  </div>
-              </div>
-          </div>
+         <div class="filters-btn">
+            <div class="filters-data">
+               <button type="button" class="time-range-btn mb-1">7d</button>
+               <button type="button" class="time-range-btn mb-1">30d</button>
+               <button type="button" class="time-range-btn mb-1">90d</button>
+               <button type="button" class="time-range-btn mb-1">All</button>
+               <button type="button" class="time-range-btn mb-1" id="dateRange">
+                  <svg
+                     width="12"
+                     height="15"
+                     viewBox="0 0 12 15"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M3.33333 8.9C3.14444 8.9 2.986 8.8328 2.858 8.6984C2.73 8.564 2.66622 8.39787 2.66667 8.2C2.66667 8.00167 2.73067 7.8353 2.85867 7.7009C2.98667 7.5665 3.14489 7.49953 3.33333 7.5C3.52222 7.5 3.68067 7.5672 3.80867 7.7016C3.93667 7.836 4.00044 8.00213 4 8.2C4 8.39833 3.936 8.5647 3.808 8.6991C3.68 8.8335 3.52178 8.90047 3.33333 8.9ZM6 8.9C5.81111 8.9 5.65267 8.8328 5.52467 8.6984C5.39667 8.564 5.33289 8.39787 5.33333 8.2C5.33333 8.00167 5.39733 7.8353 5.52533 7.7009C5.65333 7.5665 5.81156 7.49953 6 7.5C6.18889 7.5 6.34733 7.5672 6.47533 7.7016C6.60333 7.836 6.66711 8.00213 6.66667 8.2C6.66667 8.39833 6.60267 8.5647 6.47467 8.6991C6.34667 8.8335 6.18844 8.90047 6 8.9ZM8.66667 8.9C8.47778 8.9 8.31933 8.8328 8.19133 8.6984C8.06333 8.564 7.99956 8.39787 8 8.2C8 8.00167 8.064 7.8353 8.192 7.7009C8.32 7.5665 8.47822 7.49953 8.66667 7.5C8.85555 7.5 9.014 7.5672 9.142 7.7016C9.27 7.836 9.33378 8.00213 9.33333 8.2C9.33333 8.39833 9.26933 8.5647 9.14133 8.6991C9.01333 8.8335 8.85511 8.90047 8.66667 8.9ZM1.33333 14.5C0.966668 14.5 0.652668 14.3628 0.391334 14.0884C0.130001 13.814 -0.000443312 13.4845 1.13186e-06 13.1V3.3C1.13186e-06 2.915 0.130668 2.5853 0.392001 2.3109C0.653334 2.0365 0.967112 1.89953 1.33333 1.9H2V0.5H3.33333V1.9H8.66667V0.5H10V1.9H10.6667C11.0333 1.9 11.3473 2.0372 11.6087 2.3116C11.87 2.586 12.0004 2.91547 12 3.3V13.1C12 13.485 11.8693 13.8147 11.608 14.0891C11.3467 14.3635 11.0329 14.5005 10.6667 14.5H1.33333ZM1.33333 13.1H10.6667V6.1H1.33333V13.1ZM1.33333 4.7H10.6667V3.3H1.33333V4.7Z"
+                        fill="#2F0DFF" />
+                  </svg>
+               </button>
+            </div>
+
+            <div class="span5" id="sandbox-container">
+               <div class="input-daterange input-group" id="datepicker">
+                  <input
+                     type="text"
+                     class="input-sm form-control"
+                     name="start" />
+                  <input
+                     type="text"
+                     class="input-sm form-control"
+                     id="datapicker"
+                     name="end" />
+               </div>
+            </div>
+         </div>
       </div>
 
-      <nav class="mt-5">
-         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button
-               class="nav-link active"
-               id="nav-deposit-tab"
-               data-toggle="tab"
-               data-target="#nav-deposit"
-               type="button"
-               role="tab"
-               aria-controls="nav-deposit"
-               aria-selected="true"
-               style="margin-bottom: -2px"
-            >
-               Deposit
-            </button>
-            <button
-               class="nav-link"
-               id="nav-withdrawal-tab"
-               data-toggle="tab"
-               data-target="#nav-withdrawal"
-               type="button"
-               role="tab"
-               aria-controls="nav-withdrawal"
-               aria-selected="false"
-               style="margin-bottom: -2px"
-            >
-               Withdrawal
-            </button>
-            <button
-               class="nav-link"
-               id="nav-profitpartners-tab"
-               data-toggle="tab"
-               data-target="#nav-profitpartners"
-               type="button"
-               role="tab"
-               aria-controls="nav-profitpartners"
-               aria-selected="false"
-               style="margin-bottom: -2px"
-            >
-               Profit partners
-            </button>
-            <button
-               class="nav-link"
-               id="nav-buyinvest-tab"
-               data-toggle="tab"
-               data-target="#nav-buyinvest"
-               type="button"
-               role="tab"
-               aria-controls="nav-buyinvest"
-               aria-selected="true"
-               style="margin-bottom: -2px"
-            >
-               Buy invest
-            </button>
-            <button
-               class="nav-link"
-               id="nav-closeinvest-tab"
-               data-toggle="tab"
-               data-target="#nav-closeinvest"
-               type="button"
-               role="tab"
-               aria-controls="nav-closeinvest"
-               aria-selected="false"
-               style="margin-bottom: -2px"
-            >
-               Close invest
-            </button>
-            <button
-               class="nav-link"
-               id="nav-profitinvest-tab"
-               data-toggle="tab"
-               data-target="#nav-profitinvest"
-               type="button"
-               role="tab"
-               aria-controls="nav-profitinvest"
-               aria-selected="false"
-               style="margin-bottom: -2px"
-            >
-               Profit invest
-            </button>
-         </div>
-      </nav>
-      <div class="tab-content transactions-tables" id="nav-tabContent">
-         <div
-            class="tab-pane fade show active"
-            id="nav-deposit"
-            role="tabpanel"
-            aria-labelledby="nav-deposit-tab"
-         >
-            <div class="table-wrap">
-               <table class="table">
-                  <thead>
-                     <tr>
-                        <th scope="col">Payment method;</th>
-                        <th scope="col">Total</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Status</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <th scope="row">USDT TRC</th>
-                        <td>20$</td>
-                        <td>01.11.23</td>
-                        <td>confirm</td>
-                     </tr>
-                     <tr>
-                        <th scope="row">BTC</th>
-                        <td>100$</td>
-                        <td>01.11.23</td>
-                        <td>canceled</td>
-                     </tr>
-                     <tr>
-                        <th scope="row">Visa/MasterCard</th>
-                        <td>4000$</td>
-                        <td>01.11.23</td>
-                        <td>panding</td>
-                     </tr>
-                  </tbody>
-               </table>
+      <div class="tab-back">
+         <nav class="">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+               <button
+                  class="nav-link active"
+                  id="nav-deposit-tab"
+                  data-toggle="tab"
+                  data-target="#nav-deposit"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-deposit"
+                  aria-selected="true"
+                  style="margin-bottom: -2px">
+                  Deposit
+               </button>
+               <button
+                  class="nav-link"
+                  id="nav-withdrawal-tab"
+                  data-toggle="tab"
+                  data-target="#nav-withdrawal"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-withdrawal"
+                  aria-selected="false"
+                  style="margin-bottom: -2px">
+                  Withdrawal
+               </button>
+               <button
+                  class="nav-link"
+                  id="nav-profitpartners-tab"
+                  data-toggle="tab"
+                  data-target="#nav-profitpartners"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profitpartners"
+                  aria-selected="false"
+                  style="margin-bottom: -2px">
+                  Profit partners
+               </button>
+               <button
+                  class="nav-link"
+                  id="nav-buyinvest-tab"
+                  data-toggle="tab"
+                  data-target="#nav-buyinvest"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-buyinvest"
+                  aria-selected="true"
+                  style="margin-bottom: -2px">
+                  Buy invest
+               </button>
+               <button
+                  class="nav-link"
+                  id="nav-closeinvest-tab"
+                  data-toggle="tab"
+                  data-target="#nav-closeinvest"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-closeinvest"
+                  aria-selected="false"
+                  style="margin-bottom: -2px">
+                  Close invest
+               </button>
+               <button
+                  class="nav-link"
+                  id="nav-profitinvest-tab"
+                  data-toggle="tab"
+                  data-target="#nav-profitinvest"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profitinvest"
+                  aria-selected="false"
+                  style="margin-bottom: -2px">
+                  Profit invest
+               </button>
             </div>
-         </div>
-         <div
-            class="tab-pane fade"
-            id="nav-withdrawal"
-            role="tabpanel"
-            aria-labelledby="nav-withdrawal-tab"
-         >
-            <div class="table-wrap">
-               <table class="table">
-                  <thead>
-                     <tr>
-                        <th scope="col">Payment method;</th>
-                        <th scope="col">Total</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Status</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <th scope="row">USDT TRC</th>
-                        <td>20$</td>
-                        <td>01.11.23</td>
-                        <td>confirm</td>
-                     </tr>
-                     <tr>
-                        <th scope="row">BTC</th>
-                        <td>100$</td>
-                        <td>01.11.23</td>
-                        <td>canceled</td>
-                     </tr>
-                     <tr>
-                        <th scope="row">Visa/MasterCard</th>
-                        <td>4000$</td>
-                        <td>01.11.23</td>
-                        <td>panding</td>
-                     </tr>
-                  </tbody>
-               </table>
+         </nav>
+         <div class="tab-content transactions-tables" id="nav-tabContent">
+            <div
+               class="tab-pane fade show active"
+               id="nav-deposit"
+               role="tabpanel"
+               aria-labelledby="nav-deposit-tab">
+               <div class="table-wrap">
+                  <table class="table">
+                     <thead>
+                        <tr>
+                           <th scope="col">Payment method;</th>
+                           <th scope="col">Total</th>
+                           <th scope="col">Date</th>
+                           <th scope="col">Status</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <th scope="row">USDT TRC</th>
+                           <td>20$</td>
+                           <td>01.11.23</td>
+                           <td>confirm</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">BTC</th>
+                           <td>100$</td>
+                           <td>01.11.23</td>
+                           <td>canceled</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Visa/MasterCard</th>
+                           <td>4000$</td>
+                           <td>01.11.23</td>
+                           <td>panding</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
             </div>
-         </div>
-         <div
-            class="tab-pane fade"
-            id="nav-profitpartners"
-            role="tabpanel"
-            aria-labelledby="nav-profitpartners-tab"
-         >
-            <div class="table-wrap">
-               <table class="table">
-                  <thead>
-                     <tr>
-                        <th scope="col">Mail</th>
-                        <th scope="col">Total invest</th>
-                        <th scope="col">Total profi</th>
-                        <th scope="col">My profit</th>
-                        <th scope="col">Date start</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr>
-                        <th scope="row">
-                           <a
-                              href="#"
-                              data-toggle="modal"
-                              data-target="#exampleModalLg"
-                              >svetastr@ya.ru</a
-                           >
-                        </th>
-                        <td>500$</td>
-                        <td>145$</td>
-                        <td>29$</td>
-                        <td>12.01.22</td>
-                     </tr>
-                     <tr>
-                        <th scope="row">
-                           <a
-                              href="#"
-                              data-toggle="modal"
-                              data-target="#exampleModalLg"
-                              >sd@gmail.com</a
-                           >
-                        </th>
-                        <td>100$</td>
-                        <td>54$</td>
-                        <td>10.8$</td>
-                        <td>01.12.23</td>
-                     </tr>
-                     <tr>
-                        <th scope="row">
-                           <a
-                              href="#"
-                              data-toggle="modal"
-                              data-target="#exampleModalLg"
-                              >23bst@mail.ru</a
-                           >
-                        </th>
-                        <td>4000$</td>
-                        <td>1100$</td>
-                        <td>220$</td>
-                        <td>01.11.23</td>
-                     </tr>
-                  </tbody>
-               </table>
+            <div
+               class="tab-pane fade"
+               id="nav-withdrawal"
+               role="tabpanel"
+               aria-labelledby="nav-withdrawal-tab">
+               <div class="table-wrap">
+                  <table class="table">
+                     <thead>
+                        <tr>
+                           <th scope="col">Payment method;</th>
+                           <th scope="col">Total</th>
+                           <th scope="col">Date</th>
+                           <th scope="col">Status</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <th scope="row">USDT TRC</th>
+                           <td>20$</td>
+                           <td>01.11.23</td>
+                           <td>confirm</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">BTC</th>
+                           <td>100$</td>
+                           <td>01.11.23</td>
+                           <td>canceled</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Visa/MasterCard</th>
+                           <td>4000$</td>
+                           <td>01.11.23</td>
+                           <td>panding</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
             </div>
-         </div>
-         <div
-            class="tab-pane fade show"
-            id="nav-buyinvest"
-            role="tabpanel"
-            aria-labelledby="nav-buyinvest-tab"
-         >
-            <div class="table-wrap">
-               <h4>
-                  <a href="#" data-toggle="modal" data-target="#exampleModalLg"
-                     >id423</a
-                  >
-               </h4>
-               <table class="table">
-                  <tbody>
-                     <tr>
-                        <th>Total USD</th>
-                        <td>500$</td>
-                     </tr>
-                     <tr>
-                        <th>Open date</th>
-                        <td>01.12.2023</td>
-                     </tr>
-                     <tr>
-                        <th>My profit $</th>
-                        <td>214$</td>
-                     </tr>
-                     <tr>
-                        <th>Close date</th>
-                        <td>01.05.2024</td>
-                     </tr>
-                  </tbody>
-               </table>
-
-               <h4>
-                  <a href="#" data-toggle="modal" data-target="#exampleModalLg"
-                     >id484</a
-                  >
-               </h4>
-               <table class="table">
-                  <tbody>
-                     <tr>
-                        <th>Total USD</th>
-                        <td>2000$</td>
-                     </tr>
-                     <tr>
-                        <th>Open date</th>
-                        <td>01.12.2023</td>
-                     </tr>
-                     <tr>
-                        <th>My profit $</th>
-                        <td>900$</td>
-                     </tr>
-                     <tr>
-                        <th>Close date</th>
-                        <td></td>
-                     </tr>
-                  </tbody>
-               </table>
-
-               <h4>
-                  <a href="#" data-toggle="modal" data-target="#exampleModalLg"
-                     >id516</a
-                  >
-               </h4>
-               <table class="table">
-                  <tbody>
-                     <tr>
-                        <th>Total USD</th>
-                        <td>5000$</td>
-                     </tr>
-                     <tr>
-                        <th>Open date</th>
-                        <td>01.03.2024</td>
-                     </tr>
-                     <tr>
-                        <th>My profit $</th>
-                        <td>700$</td>
-                     </tr>
-                     <tr>
-                        <th>Close date</th>
-                        <td></td>
-                     </tr>
-                  </tbody>
-               </table>
+            <div
+               class="tab-pane fade"
+               id="nav-profitpartners"
+               role="tabpanel"
+               aria-labelledby="nav-profitpartners-tab">
+               <div class="table-wrap">
+                  <table class="table">
+                     <thead>
+                        <tr>
+                           <th scope="col">Mail</th>
+                           <th scope="col">Total invest</th>
+                           <th scope="col">Total profi</th>
+                           <th scope="col">My profit</th>
+                           <th scope="col">Date start</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <th scope="row">
+                              <a
+                                 href="#"
+                                 data-toggle="modal"
+                                 data-target="#exampleModalLg"
+                                 >svetastr@ya.ru</a
+                              >
+                           </th>
+                           <td>500$</td>
+                           <td>145$</td>
+                           <td>29$</td>
+                           <td>12.01.22</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">
+                              <a
+                                 href="#"
+                                 data-toggle="modal"
+                                 data-target="#exampleModalLg"
+                                 >sd@gmail.com</a
+                              >
+                           </th>
+                           <td>100$</td>
+                           <td>54$</td>
+                           <td>10.8$</td>
+                           <td>01.12.23</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">
+                              <a
+                                 href="#"
+                                 data-toggle="modal"
+                                 data-target="#exampleModalLg"
+                                 >23bst@mail.ru</a
+                              >
+                           </th>
+                           <td>4000$</td>
+                           <td>1100$</td>
+                           <td>220$</td>
+                           <td>01.11.23</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
             </div>
-         </div>
-         <div
-            class="tab-pane fade"
-            id="nav-closeinvest"
-            role="tabpanel"
-            aria-labelledby="nav-closeinvest-tab"
-         >
-            <div class="table-wrap">
-               <h4>
-                  <a href="#" data-toggle="modal" data-target="#exampleModalLg"
-                     >id423</a
-                  >
-               </h4>
-               <table class="table">
-                  <tbody>
-                     <tr>
-                        <th>Total USD</th>
-                        <td>500$</td>
-                     </tr>
-                     <tr>
-                        <th>Open date</th>
-                        <td>01.12.2023</td>
-                     </tr>
-                     <tr>
-                        <th>My profit $</th>
-                        <td>214$</td>
-                     </tr>
-                     <tr>
-                        <th>Close date</th>
-                        <td>01.05.2024</td>
-                     </tr>
-                  </tbody>
-               </table>
+            <div
+               class="tab-pane fade show"
+               id="nav-buyinvest"
+               role="tabpanel"
+               aria-labelledby="nav-buyinvest-tab">
+               <div class="table-wrap">
+                  <h4>
+                     <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#exampleModalLg"
+                        >id423</a
+                     >
+                  </h4>
+                  <table class="table">
+                     <tbody>
+                        <tr>
+                           <th>Total USD</th>
+                           <td>500$</td>
+                        </tr>
+                        <tr>
+                           <th>Open date</th>
+                           <td>01.12.2023</td>
+                        </tr>
+                        <tr>
+                           <th>My profit $</th>
+                           <td>214$</td>
+                        </tr>
+                        <tr>
+                           <th>Close date</th>
+                           <td>01.05.2024</td>
+                        </tr>
+                     </tbody>
+                  </table>
 
-               <h4>
-                  <a href="#" data-toggle="modal" data-target="#exampleModalLg"
-                     >id484</a
-                  >
-               </h4>
-               <table class="table">
-                  <tbody>
-                     <tr>
-                        <th>Total USD</th>
-                        <td>2000$</td>
-                     </tr>
-                     <tr>
-                        <th>Open date</th>
-                        <td>01.12.2023</td>
-                     </tr>
-                     <tr>
-                        <th>My profit $</th>
-                        <td>900$</td>
-                     </tr>
-                     <tr>
-                        <th>Close date</th>
-                        <td></td>
-                     </tr>
-                  </tbody>
-               </table>
+                  <h4>
+                     <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#exampleModalLg"
+                        >id484</a
+                     >
+                  </h4>
+                  <table class="table">
+                     <tbody>
+                        <tr>
+                           <th>Total USD</th>
+                           <td>2000$</td>
+                        </tr>
+                        <tr>
+                           <th>Open date</th>
+                           <td>01.12.2023</td>
+                        </tr>
+                        <tr>
+                           <th>My profit $</th>
+                           <td>900$</td>
+                        </tr>
+                        <tr>
+                           <th>Close date</th>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
 
-               <h4>
-                  <a href="#" data-toggle="modal" data-target="#exampleModalLg"
-                     >id516</a
-                  >
-               </h4>
-               <table class="table">
-                  <tbody>
-                     <tr>
-                        <th>Total USD</th>
-                        <td>5000$</td>
-                     </tr>
-                     <tr>
-                        <th>Open date</th>
-                        <td>01.03.2024</td>
-                     </tr>
-                     <tr>
-                        <th>My profit $</th>
-                        <td>700$</td>
-                     </tr>
-                     <tr>
-                        <th>Close date</th>
-                        <td></td>
-                     </tr>
-                  </tbody>
-               </table>
+                  <h4>
+                     <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#exampleModalLg"
+                        >id516</a
+                     >
+                  </h4>
+                  <table class="table">
+                     <tbody>
+                        <tr>
+                           <th>Total USD</th>
+                           <td>5000$</td>
+                        </tr>
+                        <tr>
+                           <th>Open date</th>
+                           <td>01.03.2024</td>
+                        </tr>
+                        <tr>
+                           <th>My profit $</th>
+                           <td>700$</td>
+                        </tr>
+                        <tr>
+                           <th>Close date</th>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
             </div>
-         </div>
-         <div
-            class="tab-pane fade"
-            id="nav-profitinvest"
-            role="tabpanel"
-            aria-labelledby="nav-profitinvest-tab"
-         >
-            <div class="table-wrap">
-               <h4><a href="#" data-toggle="modal" data-target="#exampleModalLg">id423</a></h4>
-               <table class="table">
-                  <tbody>
-                    <tr>
-                      <th scope="row">Total USD</th>
-                      <td>500$</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Open date</th>
-                      <td>01.12.2023</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">My profit $</th>
-                      <td>214$</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Profit leader</th>
-                      <td>42$</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Profit trade24</th>
-                      <td>112$</td>
-                    </tr>
-                     <tr>
-                       <th scope="row">Next % profit</th>
-                      <td>3.5923%</td>
-                     </tr>
-                  </tbody>
-               </table>
+            <div
+               class="tab-pane fade"
+               id="nav-closeinvest"
+               role="tabpanel"
+               aria-labelledby="nav-closeinvest-tab">
+               <div class="table-wrap">
+                  <h4>
+                     <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#exampleModalLg"
+                        >id423</a
+                     >
+                  </h4>
+                  <table class="table">
+                     <tbody>
+                        <tr>
+                           <th>Total USD</th>
+                           <td>500$</td>
+                        </tr>
+                        <tr>
+                           <th>Open date</th>
+                           <td>01.12.2023</td>
+                        </tr>
+                        <tr>
+                           <th>My profit $</th>
+                           <td>214$</td>
+                        </tr>
+                        <tr>
+                           <th>Close date</th>
+                           <td>01.05.2024</td>
+                        </tr>
+                     </tbody>
+                  </table>
 
-               <h4><a href="#" data-toggle="modal" data-target="#exampleModalLg">id423</a></h4>
-               <table class="table">
-                  <tbody>
-                    <tr>
-                      <th scope="row">Total USD</th>
-                      <td>900$</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Open date</th>
-                      <td>01.03.2024</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">My profit $</th>
-                      <td>834$</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Profit leader</th>
-                      <td>196.8$</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Profit trade24</th>
-                      <td>1237$</td>
-                    </tr>
-                     <tr>
-                       <th scope="row">Next % profit</th>
-                      <td>3.5923%</td>
-                     </tr>
-                  </tbody>
-               </table>
+                  <h4>
+                     <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#exampleModalLg"
+                        >id484</a
+                     >
+                  </h4>
+                  <table class="table">
+                     <tbody>
+                        <tr>
+                           <th>Total USD</th>
+                           <td>2000$</td>
+                        </tr>
+                        <tr>
+                           <th>Open date</th>
+                           <td>01.12.2023</td>
+                        </tr>
+                        <tr>
+                           <th>My profit $</th>
+                           <td>900$</td>
+                        </tr>
+                        <tr>
+                           <th>Close date</th>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
 
-               <h4><a href="#" data-toggle="modal" data-target="#exampleModalLg">id423</a></h4>
-               <table class="table">
-                  <tbody>
-                    <tr>
-                      <th scope="row">Total USD</th>
-                      <td>5500$</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Open date</th>
-                      <td>01.02.2025</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">My profit $</th>
-                      <td>500$</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Profit leader</th>
-                      <td>100$</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Profit trade24</th>
-                      <td>624$</td>
-                    </tr>
-                     <tr>
-                       <th scope="row">Next % profit</th>
-                      <td>3.5923%</td>
-                     </tr>
-                  </tbody>
-               </table>
+                  <h4>
+                     <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#exampleModalLg"
+                        >id516</a
+                     >
+                  </h4>
+                  <table class="table">
+                     <tbody>
+                        <tr>
+                           <th>Total USD</th>
+                           <td>5000$</td>
+                        </tr>
+                        <tr>
+                           <th>Open date</th>
+                           <td>01.03.2024</td>
+                        </tr>
+                        <tr>
+                           <th>My profit $</th>
+                           <td>700$</td>
+                        </tr>
+                        <tr>
+                           <th>Close date</th>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <div
+               class="tab-pane fade"
+               id="nav-profitinvest"
+               role="tabpanel"
+               aria-labelledby="nav-profitinvest-tab">
+               <div class="table-wrap">
+                  <h4>
+                     <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#exampleModalLg"
+                        >id423</a
+                     >
+                  </h4>
+                  <table class="table">
+                     <tbody>
+                        <tr>
+                           <th scope="row">Total USD</th>
+                           <td>500$</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Open date</th>
+                           <td>01.12.2023</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">My profit $</th>
+                           <td>214$</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Profit leader</th>
+                           <td>42$</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Profit trade24</th>
+                           <td>112$</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Next % profit</th>
+                           <td>3.5923%</td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+                  <h4>
+                     <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#exampleModalLg"
+                        >id423</a
+                     >
+                  </h4>
+                  <table class="table">
+                     <tbody>
+                        <tr>
+                           <th scope="row">Total USD</th>
+                           <td>900$</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Open date</th>
+                           <td>01.03.2024</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">My profit $</th>
+                           <td>834$</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Profit leader</th>
+                           <td>196.8$</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Profit trade24</th>
+                           <td>1237$</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Next % profit</th>
+                           <td>3.5923%</td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+                  <h4>
+                     <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#exampleModalLg"
+                        >id423</a
+                     >
+                  </h4>
+                  <table class="table">
+                     <tbody>
+                        <tr>
+                           <th scope="row">Total USD</th>
+                           <td>5500$</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Open date</th>
+                           <td>01.02.2025</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">My profit $</th>
+                           <td>500$</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Profit leader</th>
+                           <td>100$</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Profit trade24</th>
+                           <td>624$</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">Next % profit</th>
+                           <td>3.5923%</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
             </div>
          </div>
       </div>
@@ -546,8 +592,7 @@
    tabindex="-1"
    aria-labelledby="exampleModalLg"
    aria-modal="true"
-   role="dialog"
->
+   role="dialog">
    <div class="modal-dialog modal-lg" style="max-width: 400px">
       <div class="modal-content">
          <div class="modal-header">
@@ -556,8 +601,7 @@
                type="button"
                class="close"
                data-dismiss="modal"
-               aria-label="Close"
-            >
+               aria-label="Close">
                <span aria-hidden="true">×</span>
             </button>
          </div>
@@ -617,11 +661,7 @@
             </div>
          </div>
          <div class="modal-footer">
-            <button
-               type="button"
-               class="btn btn-warning"
-               data-dismiss="modal"
-            >
+            <button type="button" class="service-buttons" data-dismiss="modal">
                Close
             </button>
          </div>
@@ -632,7 +672,7 @@
 <script>
    $('#sandbox-container .input-daterange').datepicker('clearDates');
 
-   $('#dateRange').on('click', function() {
+   $('#dateRange').on('click', function () {
       $('#datapicker').focus();
    });
 </script>
