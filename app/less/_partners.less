@@ -1,0 +1,49 @@
+.partners-content {
+    display: flex;
+    justify-content: space-between;
+
+    .video-card {
+        margin-top: 0;
+        max-width: 374px;
+    }
+}
+
+.referal {
+    color: #fff;
+    max-width: 308px;
+
+    &__header {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 20px;
+    }
+
+    &__body {
+        width: 100%;
+        padding: 12px 18px;
+        background: #080031;
+        border-radius: 11px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 770px) {
+    .partners-content {
+        flex-direction: column;
+
+        .video-card {
+            max-width: unset;
+        }
+    }
+
+    .referal {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+
+}

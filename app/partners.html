@@ -1,18 +1,11 @@
 <div class="main-alerts">
-   <div class="container substrate">
-      <p class="h1 mt-5">
-         <span>Partners</span>
-         <button type="button" class="btn btn-outline-danger ml-2 refs">
-            Ref
-         </button>
-      </p>
-
-      <div class="row mt-5">
-         <div class="col-xl-7 col-md-6 col-sm-12 mb-4">
+   <div class="container">
+      <h2 class="section-heading">Partners</h2>
+      <div class="mt-5 partners-content">
+         <div class="video-card">
             <div class="invest-video">
                <video
                   poster="video/maxresdefault.jpg"
-                  autoplay="autoplay"
                   loop="loop"
                   controls="controls"
                   muted="muted"
@@ -20,55 +13,63 @@
                   tabindex="0"
                   width="100%"
                   height="100%"
-                  class="video"
-               >
+                  class="video">
                   <source
                      src="video/videoplayback.mp4"
-                     type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
-                  />
+                     type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
                   <source
                      src="video/videoplayback.3gpp"
-                     type='video/3gpp; codecs="mp4v.20.8, samr"'
-                  />
+                     type='video/3gpp; codecs="mp4v.20.8, samr"' />
                </video>
+               <button class="video-play-btn" id="playVideo"></button>
             </div>
             <div>
-               <p class="mt-3" role="alert">Choose voice acting</p>
-               <div class="d-flex justify-content-between">
-                  <div>
-                     <button
-                        type="button"
-                        class="btn btn-warning btn-sm voice-btn"
-                     >
-                        eng
-                     </button>
-                     <button
-                        type="button"
-                        class="btn btn-warning btn-sm voice-btn"
-                     >
-                        ru
-                     </button>
-                     <button
-                        type="button"
-                        class="btn btn-warning btn-sm voice-btn"
-                     >
-                        中國人
-                     </button>
+               <div class="video-group-btn">
+                  <button class="print-btn">Open PDF</button>
+                  <div class="lang-btn-group">
+                     <span class="btn-label">Choose voice acting</span>
+                     <button class="lang-btn">Eng</button>
+                     <button class="lang-btn">Ru</button>
                   </div>
-
-                  <button
-                     type="button"
-                     class="btn btn-dark btn-sm"
-                     style="min-width: 124px; max-height: 43px"
-                  >
-                     Open pdf
-                  </button>
                </div>
+            </div>
+         </div>
+
+         <div class="referal">
+            <h4 class="referal__header">My referral link</h4>
+            <div class="referal__body">
+               <button
+                  type="button"
+                  class="toast-btn copyToastBtn"
+                  id="copyReferalBtn"
+                  aria-label="Copy button"
+                  data-clipboard-target="#copyTarget"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title=""
+                  data-original-title="Copy to ref">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="16"
+                     height="16"
+                     fill="currentColor"
+                     class="bi bi-clipboard"
+                     viewBox="0 0 16 16">
+                     <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+                     <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+                  </svg>
+               </button>
+               <input
+                  id="copyTarget"
+                  value="https://github.com/zenorocha/clipboard.js.git"
+                  class="toast-text mr-1" />
             </div>
          </div>
       </div>
 
-      <div class="mt-5">
+      <div class="tab-back mt-5">
          <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                <button
@@ -80,8 +81,7 @@
                   role="tab"
                   aria-controls="partners"
                   aria-selected="true"
-                  style="margin-bottom: -3px"
-               >
+                  style="margin-bottom: -3px">
                   My partners
                </button>
                <button
@@ -93,8 +93,7 @@
                   role="tab"
                   aria-controls="partnersStatistics"
                   aria-selected="false"
-                  style="margin-bottom: -3px"
-               >
+                  style="margin-bottom: -3px">
                   Statistics my partners
                </button>
             </div>
@@ -104,8 +103,7 @@
                class="tab-pane fade show active"
                id="partners"
                role="tabpanel"
-               aria-labelledby="partners-tab"
-            >
+               aria-labelledby="partners-tab">
                <div class="table-wrap">
                   <table class="table">
                      <thead>
@@ -147,8 +145,7 @@
                class="tab-pane fade"
                id="partnersStatistics"
                role="tabpanel"
-               aria-labelledby="partnersStatistics-tab"
-            >
+               aria-labelledby="partnersStatistics-tab">
                <div class="table-wrap">
                   <table class="table">
                      <tbody>
@@ -171,15 +168,34 @@
          </div>
       </div>
 
-      <button type="button" id="problemsBtn" class="btn btn-warning mb-2 mt-5" onclick="$('#problemModel').modal('show')">
-         Are you problems?
-      </button>
+      <div class="statistic-problem">
+         <button
+            type="button"
+            id="problemsBtn"
+            class="btn btn-warning mt-4"
+            onclick="$('#problemModel').modal('show')">
+            Are you problems?
+         </button>
+      </div>
    </div>
 </div>
 
 <script>
-   $('.refs').on('click', function () {
-      $('#liveToast').toast('show');
+   var clipboard = new ClipboardJS('#copyReferalBtn');
+
+   $('#copyReferalBtn').tooltip({ delay: { show: 500, hide: 100 } });
+
+   $('#copyReferalBtn').on('click', function () {
+      clipboard.on('success', function (e) {
+         $('#copyReferalBtn')
+            .attr('title', 'Copied!')
+            .tooltip('_fixTitle')
+            .tooltip('show')
+            .attr('title', 'Copy to clipboard')
+            .tooltip('_fixTitle');
+
+         e.clearSelection();
+      });
    });
 
    $('#nav-tab #partners-tab').tab('show');
