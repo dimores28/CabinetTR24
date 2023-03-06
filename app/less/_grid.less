@@ -41,12 +41,26 @@ body, html {
   padding: 10px 28px;
   background: #EB00FF;
   border-radius: 8px;
+  border: none;
+  transition: all 0.4s ease-in;
 }
 
 .main-buttons_big {
   border: none;
   padding: 10px 38px;
   animation: 1.5s linear infinite dlink;
+}
+
+.main-buttons:hover,
+.main-buttons:focus,
+.main-buttons:active{
+  opacity: 0.6;
+}
+
+.main-buttons_small {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 6px 13px;
 }
 
 .secondary-buttons-modal,
@@ -512,3 +526,6 @@ label {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.send-code {
+  color: #fff;
+}

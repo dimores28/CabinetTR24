@@ -1,5 +1,7 @@
-.video {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.main-container {
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
 .voice-btn {
@@ -12,24 +14,36 @@
 
 #investTab {
     .nav-link {
-        color: #000;
+        color: #fff;
     }
 
     .nav-link:hover,
     .nav-link.active {
-        color: #150E41;
+        color: #fff;
     }
 }
 
-
-.btn-primary_mt {
-    margin-top: 2px;
+@media (max-width: 1150px) {
+    .main-container {
+        .tab-back {
+            width: 60%;
+        }
+    }
 }
 
+@media (max-width: 992px) {
+    .main-container {
+        .tab-back {
+            width: 100%;
+        }
+    }
+}
 
 @media (max-width: 576px) { 
     .investment-table {
-        overflow-x: scroll; 
+        .service-buttons {
+            width: 132px;
+        }
 
         .btn {
             min-width: 94px;
@@ -69,7 +83,7 @@
     column-gap: 24px;
     row-gap: 10px;
     grid-template-columns: 270px 270px minmax(374px, 516px);
-    grid-template-rows: auto auto;
+    grid-template-rows: auto 105px;
 }
 
 
@@ -79,6 +93,11 @@
 
 .card-2 {
     grid-area: card-2;
+
+    .btn-warning {
+        font-size: 10px;
+        line-height: 13px;
+    }
 }
 
 .invest-card {
@@ -128,6 +147,21 @@
     padding: 15px 20px;
     background: #725BFF;
     border-radius: 10px;
+    position: relative;
+    background-image: url('../images/themes/money.png');
+    background-repeat: no-repeat;
+    background-position: 130% 25%;
+    background-size: 70%;
+
+    ::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #715bff36;
+    }
 
     &__text {
         font-family: 'Poppins';
@@ -139,6 +173,8 @@
 
         max-width: 200px;
         margin-bottom: 8px;
+        position: relative;
+        z-index: 1;
     }
 
     &__linck {
@@ -209,6 +245,7 @@
     padding: 6px 13px;
     background: #2F0DFF;
     border-radius: 8px;
+    border: none;
     transition: all 0.4s ease-in;
 }
 
@@ -230,6 +267,33 @@
     margin-left: auto;
 }
 
+.video {
+    border-radius: 10px;
+    
+}
+
+.invest-video {
+    position: relative;
+}
+
+.video-play-btn {
+    position: absolute;
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    top: 50%;
+    left: 50%;
+    border: none;
+    background-color: transparent;
+    background-image: url('../images/icons/play_btn.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
 @media (max-width: 1208px) {
     .invest-grid {
         grid-template-areas: 
@@ -247,10 +311,20 @@
 @media (max-width: 660px) {
     .invest-grid {
         grid-template-areas: 
-        "card-1 card-1"
-        "card-2 card-2"
-        "baner baner"
+        "card-1 baner"
+        "card-2 baner"
         "video video"; 
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .invest-baner {
+        background-position: 90% 100%;
+        background-size: 140%; 
+
+        &__text {
+            margin-bottom: 20px;
+        }
     }
 
     .card-1,
@@ -258,4 +332,36 @@
         max-width: 270px;
     }
 
+}
+
+@media (max-width: 440px) {
+    .invest-grid {
+        grid-template-areas: 
+        "card-1 card-1"
+        "card-2 card-2"
+        "baner baner"
+        "video video"; 
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto 105px auto;
+    }
+
+    .invest-baner {
+        background-position: 130% 25%;
+        background-size: 70%;
+
+        &__text {
+            margin-bottom: 8px;
+        }
+    }
+
+    .video-play-btn {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+@media (max-width: 380px) {
+    .btn-label {
+        display: none;
+    }
 }

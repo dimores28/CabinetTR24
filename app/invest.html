@@ -10,7 +10,12 @@
                </div>
                <div class="card__body">
                   <p class="card__sum">1,820</p>
-                  <img src="images/card/trend.png" class="card__img" alt="progress" width="106" height="69">
+                  <img
+                     src="images/card/trend.png"
+                     class="card__img"
+                     alt="progress"
+                     width="106"
+                     height="69" />
                </div>
                <div class="card__footer">
                   <div class="card-balance__cell">
@@ -32,15 +37,27 @@
                <form>
                   <div class="invest-card__body">
                      <div class="form-group">
-                        <label for="amountInvestment">The amount of investment</label>
-                        <input type="text" class="form-control" id="amountInvestment" placeholder="0.00">
-                      </div>
+                        <label for="amountInvestment"
+                           >The amount of investment</label
+                        >
+                        <input
+                           type="text"
+                           class="form-control"
+                           id="amountInvestment"
+                           placeholder="0.00" />
+                     </div>
                   </div>
                   <div class="invest-card__footer">
-                     <button type="button" id="problemsBtn" class="btn btn-warning" onclick="$('#problemModel').modal('show')">
+                     <button
+                        type="button"
+                        id="problemsBtn"
+                        class="btn btn-warning"
+                        onclick="$('#problemModel').modal('show')">
                         Are you problems?
-                      </button>
-                     <button type="submit" class="btn btn-primary">Confirm</button>
+                     </button>
+                     <button type="submit" class="btn btn-primary">
+                        Confirm
+                     </button>
                   </div>
                </form>
             </div>
@@ -57,7 +74,6 @@
             <div class="invest-video">
                <video
                   poster="video/maxresdefault.jpg"
-                  autoplay="autoplay"
                   loop="loop"
                   controls="controls"
                   muted="muted"
@@ -65,17 +81,15 @@
                   tabindex="0"
                   width="100%"
                   height="100%"
-                  class="video"
-               >
+                  class="video">
                   <source
                      src="video/videoplayback.mp4"
-                     type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
-                  />
+                     type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
                   <source
                      src="video/videoplayback.3gpp"
-                     type='video/3gpp; codecs="mp4v.20.8, samr"'
-                  />
+                     type='video/3gpp; codecs="mp4v.20.8, samr"' />
                </video>
+               <button class="video-play-btn" id="playVideo"></button>
             </div>
             <div>
                <div class="video-group-btn">
@@ -89,14 +103,14 @@
             </div>
          </div>
       </div>
-
-      <div class="mt-5">
+   </div>
+   <div class="main-container">
+      <div class="tab-back mt-5">
          <ul
             class="nav nav-tabs"
             id="investTab"
             role="tablist"
-            style="margin-bottom: -4px"
-         >
+            style="margin-bottom: -4px">
             <li class="nav-item">
                <a
                   class="nav-link active"
@@ -106,8 +120,7 @@
                   role="tab"
                   aria-controls="home"
                   aria-selected="true"
-                  style="margin-right: -2px"
-               >
+                  style="margin-right: -2px">
                   Open invest
                </a>
             </li>
@@ -119,23 +132,21 @@
                   href="#history"
                   role="tab"
                   aria-controls="profile"
-                  aria-selected="false"
-               >
+                  aria-selected="false">
                   History profit
                </a>
             </li>
+            <a href="#" class="linck view-linck"><span>View all</span>→</a>
          </ul>
          <div
             class="tab-content"
             id="investTabContent"
-            style="margin-left: -4px"
-         >
+            style="margin-left: -4px">
             <div
                class="investment-table p-1 tab-pane fade show active"
                id="invest"
                role="tabpanel"
-               aria-labelledby="invest-tab"
-            >
+               aria-labelledby="invest-tab">
                <div class="table-wrap">
                   <table class="table">
                      <thead>
@@ -152,8 +163,7 @@
                               <a
                                  href="#"
                                  data-toggle="modal"
-                                 data-target="#exampleModalLg"
-                              >
+                                 data-target="#exampleModalLg">
                                  id423
                               </a>
                            </th>
@@ -162,10 +172,9 @@
                            <td>
                               <button
                                  type="button"
-                                 class="btn btn-dark btn-sm"
+                                 class="main-buttons main-buttons_small"
                                  data-toggle="modal"
-                                 data-target=".bd-example-modal-sm"
-                              >
+                                 data-target=".bd-example-modal-sm">
                                  Close invest
                               </button>
                            </td>
@@ -175,8 +184,7 @@
                               <a
                                  href="#"
                                  data-toggle="modal"
-                                 data-target="#exampleModalLg"
-                              >
+                                 data-target="#exampleModalLg">
                                  id523
                               </a>
                            </th>
@@ -185,10 +193,9 @@
                            <td>
                               <button
                                  type="button"
-                                 class="btn btn-dark btn-sm"
+                                 class="main-buttons main-buttons_small"
                                  data-toggle="modal"
-                                 data-target=".bd-example-modal-sm"
-                              >
+                                 data-target=".bd-example-modal-sm">
                                  Close invest
                               </button>
                            </td>
@@ -198,8 +205,7 @@
                               <a
                                  href="#"
                                  data-toggle="modal"
-                                 data-target="#exampleModalLg"
-                              >
+                                 data-target="#exampleModalLg">
                                  id4521
                               </a>
                            </th>
@@ -208,29 +214,22 @@
                            <td>
                               <button
                                  type="button"
-                                 class="btn btn-dark btn-sm"
+                                 class="main-buttons main-buttons_small"
                                  data-toggle="modal"
-                                 data-target=".bd-example-modal-sm"
-                              >
+                                 data-target=".bd-example-modal-sm">
                                  Close invest
                               </button>
                            </td>
                         </tr>
                      </tbody>
                   </table>
-                  <div class="text-right">
-                     <button type="button" class="btn btn-outline-danger mt-2">
-                        View all
-                     </button>
-                  </div>
                </div>
             </div>
             <div
                class="history-table tab-pane p-1 fade"
                id="history"
                role="tabpanel"
-               aria-labelledby="history-tab"
-            >
+               aria-labelledby="history-tab">
                <div class="table-wrap">
                   <table class="table">
                      <thead>
@@ -253,11 +252,6 @@
                         </tr>
                      </tbody>
                   </table>
-                  <div class="text-right">
-                     <button type="button" class="btn btn-outline-danger mt-2">
-                        View all
-                     </button>
-                  </div>
                </div>
             </div>
          </div>
@@ -271,8 +265,7 @@
    tabindex="-1"
    role="dialog"
    aria-labelledby="mySmallModalLabel"
-   aria-hidden="true"
->
+   aria-hidden="true">
    <div class="modal-dialog small-modal" style="max-width: 513px">
       <div class="modal-content">
          <div class="modal-header">
@@ -281,27 +274,36 @@
                type="button"
                class="close"
                data-dismiss="modal"
-               aria-label="Close"
-            >
+               aria-label="Close">
                <span aria-hidden="true">&times;</span>
             </button>
          </div>
          <div class="modal-body">
             <div class="modal-content p-3">
                <div>
-                  <button type="button" class="btn btn-dark btn-sm my-1 mt-1">
+                  <button
+                     type="button"
+                     class="main-buttons main-buttons_small btn-sm my-1 mt-1">
                      10%
                   </button>
-                  <button type="button" class="btn btn-dark btn-sm my-1 mt-1">
+                  <button
+                     type="button"
+                     class="main-buttons main-buttons_small btn-sm my-1 mt-1">
                      25%
                   </button>
-                  <button type="button" class="btn btn-dark btn-sm my-1 mt-1">
+                  <button
+                     type="button"
+                     class="main-buttons main-buttons_small btn-sm my-1 mt-1">
                      50%
                   </button>
-                  <button type="button" class="btn btn-dark btn-sm my-1 mt-1">
+                  <button
+                     type="button"
+                     class="main-buttons main-buttons_small btn-sm my-1 mt-1">
                      75%
                   </button>
-                  <button type="button" class="btn btn-dark btn-sm my-1 mt-1">
+                  <button
+                     type="button"
+                     class="main-buttons main-buttons_small btn-sm my-1 mt-1">
                      100%
                   </button>
                </div>
@@ -317,8 +319,7 @@
                            class="form-control"
                            id="emailConfirmationCode"
                            aria-describedby="emailConfirmationCodeHelp"
-                           placeholder="Confirmation code"
-                        />
+                           placeholder="Confirmation code" />
                         <small id="emailHelp" class="form-text text-muted">
                            <a href="#" class="send-code mt-1 mb-2">
                               Resend code to email
@@ -335,8 +336,7 @@
                         <input
                            type="text"
                            class="form-control"
-                           id="googleAuthenticationCod"
-                        />
+                           id="googleAuthenticationCod" />
                      </div>
                      <button type="submit" class="btn btn-primary">
                         Confirm
@@ -348,8 +348,7 @@
                   type="button"
                   id="problemsBtn"
                   class="btn btn-warning mt-5"
-                  onclick="$('#problemModel').modal('show')"
-               >
+                  onclick="$('#problemModel').modal('show')">
                   Are you problems?
                </button>
             </div>
@@ -365,8 +364,7 @@
    tabindex="-1"
    aria-labelledby="exampleModalLg"
    aria-modal="true"
-   role="dialog"
->
+   role="dialog">
    <div class="modal-dialog modal-lg">
       <div class="modal-content">
          <div class="modal-header">
@@ -377,8 +375,7 @@
                type="button"
                class="close"
                data-dismiss="modal"
-               aria-label="Close"
-            >
+               aria-label="Close">
                <span aria-hidden="true">×</span>
             </button>
          </div>
@@ -390,37 +387,33 @@
                         <th
                            scope="col"
                            style="
-                              border-bottom: 1px solid rgba(235, 0, 255, 0.75);
+                              border-bottom: 1px solid rgba(255, 255, 255, 0.2);
                               border-top: none;
-                           "
-                        >
+                           ">
                            id
                         </th>
                         <th
                            scope="col"
                            style="
-                              border-bottom: 1px solid rgba(235, 0, 255, 0.75);
+                              border-bottom: 1px solid rgba(255, 255, 255, 0.2);
                               border-top: none;
-                           "
-                        >
+                           ">
                            Investment amount
                         </th>
                         <th
                            scope="col"
                            style="
-                              border-bottom: 1px solid rgba(235, 0, 255, 0.75);
+                              border-bottom: 1px solid rgba(255, 255, 255, 0.2);
                               border-top: none;
-                           "
-                        >
+                           ">
                            Date
                         </th>
                         <th
                            scope="col"
                            style="
-                              border-bottom: 1px solid rgba(235, 0, 255, 0.75);
+                              border-bottom: 1px solid rgba(255, 255, 255, 0.2);
                               border-top: none;
-                           "
-                        >
+                           ">
                            More information
                         </th>
                      </tr>
@@ -459,7 +452,12 @@
       e.preventDefault();
    });
 
-   $('#problemsBtn').on('click', function() {
+   $('#problemsBtn').on('click', function () {
       $('#problemModel').modal('show');
+   });
+
+   $('#playVideo').on('click', function () {
+      document.querySelector('.video').play();
+      $(this).hide();
    });
 </script>

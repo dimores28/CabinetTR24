@@ -1,2 +1,2 @@
-.footer{grid-area:footer;padding:30px 20px}
+.footer{grid-area:footer;padding:30px 20px;background:#060026}.footer__text{font-weight:700;font-size:18px;line-height:27px;color:#fff}.footer__linck{font-weight:700;font-size:18px;line-height:27px;color:#eb00ff;text-decoration:none}.footer__linck:hover{opacity:.6;text-decoration:none}
 /*# sourceMappingURL=../maps/_footer.min.css.map */
