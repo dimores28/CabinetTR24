@@ -1,1 +1,1 @@
-{"version":3,"sources":["_partners.less"],"names":[],"mappings":"AAAA,yBACG,UACG,WAAA","file":"../less/_partners.min.css","sourcesContent":["@media (max-width: 768px) { \r\n   #partners {\r\n      overflow-x: scroll;\r\n   }\r\n }"]}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"../less/_partners.min.css","sourcesContent":[]}

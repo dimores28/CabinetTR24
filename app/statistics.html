@@ -1,47 +1,70 @@
 <div class="main-alerts">
-   <div class="container substrate">
-      <p class="h1 mt-5">Statistics</p>
+   <div class="container">
+      <h2 class="section-heading">Statistics</h2>
 
-      <div class="row mt-5">
-         <div class="col-xl-8 col-sm-12 mb-4">
-            <div class="filteers">
-               <div class="filteers__group-btn">
-                  <span class="filteers__label mr-3">Date:</span>
-                  <button type="button" class="btn btn-warning filteers__btn">
-                     7d
-                  </button>
-                  <button type="button" class="btn btn-warning filteers__btn">
-                     30d
-                  </button>
-                  <button type="button" class="btn btn-warning filteers__btn">
-                     90d
-                  </button>
-                  <button
-                     type="button"
-                     class="btn btn-dark filteers__settings-btn"
-                  >
-                     Settings
-                  </button>
-
-                  <div class="span5" id="calendar">
-                     <div class="input-daterange input-group" id="datepicker">
-                       <input type="text" class="input-sm form-control" name="start" />
-                       <input type="text" class="input-sm form-control" id="datapicker" name="end" />
-                     </div>
-                 </div>
+      <div class="line-cards">
+         <div class="card-wrap mb-4">
+            <div class="card-heading">Balance</div>
+            <div class="card card-balance">
+               <div class="card__header">
+                  <h5 class="card__title">$</h5>
+               </div>
+               <div class="card__body">
+                  <p class="card__sum">1,820</p>
+                  <img
+                     src="images/card/trend.png"
+                     class="card__img"
+                     alt="progress"
+                     width="106"
+                     height="69" />
+               </div>
+               <div class="card__footer">
+                  <div class="card-balance__cell">
+                     <p>Profit</p>
+                     <p>34%</p>
+                  </div>
+                  <div class="card-balance__cell card-balance__cell-centr">
+                     <p>Profit amount</p>
+                     <p>1200$</p>
+                  </div>
                </div>
             </div>
          </div>
+      </div>
 
-         <div class="col-xl-4 col-md-6 col-sm-8 mb-4">
-            <h4 class="substrate p-4 my-profit">
-               All my profit:
-               <span>5012$</span>
-            </h4>
+      <div class="filters-btn">
+         <div class="filters-data">
+            <button type="button" class="time-range-btn mb-1">7d</button>
+            <button type="button" class="time-range-btn mb-1">30d</button>
+            <button type="button" class="time-range-btn mb-1">90d</button>
+            <button type="button" class="time-range-btn mb-1">All</button>
+            <button type="button" class="time-range-btn mb-1" id="dateRange">
+               <svg
+                  width="12"
+                  height="15"
+                  viewBox="0 0 12 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M3.33333 8.9C3.14444 8.9 2.986 8.8328 2.858 8.6984C2.73 8.564 2.66622 8.39787 2.66667 8.2C2.66667 8.00167 2.73067 7.8353 2.85867 7.7009C2.98667 7.5665 3.14489 7.49953 3.33333 7.5C3.52222 7.5 3.68067 7.5672 3.80867 7.7016C3.93667 7.836 4.00044 8.00213 4 8.2C4 8.39833 3.936 8.5647 3.808 8.6991C3.68 8.8335 3.52178 8.90047 3.33333 8.9ZM6 8.9C5.81111 8.9 5.65267 8.8328 5.52467 8.6984C5.39667 8.564 5.33289 8.39787 5.33333 8.2C5.33333 8.00167 5.39733 7.8353 5.52533 7.7009C5.65333 7.5665 5.81156 7.49953 6 7.5C6.18889 7.5 6.34733 7.5672 6.47533 7.7016C6.60333 7.836 6.66711 8.00213 6.66667 8.2C6.66667 8.39833 6.60267 8.5647 6.47467 8.6991C6.34667 8.8335 6.18844 8.90047 6 8.9ZM8.66667 8.9C8.47778 8.9 8.31933 8.8328 8.19133 8.6984C8.06333 8.564 7.99956 8.39787 8 8.2C8 8.00167 8.064 7.8353 8.192 7.7009C8.32 7.5665 8.47822 7.49953 8.66667 7.5C8.85555 7.5 9.014 7.5672 9.142 7.7016C9.27 7.836 9.33378 8.00213 9.33333 8.2C9.33333 8.39833 9.26933 8.5647 9.14133 8.6991C9.01333 8.8335 8.85511 8.90047 8.66667 8.9ZM1.33333 14.5C0.966668 14.5 0.652668 14.3628 0.391334 14.0884C0.130001 13.814 -0.000443312 13.4845 1.13186e-06 13.1V3.3C1.13186e-06 2.915 0.130668 2.5853 0.392001 2.3109C0.653334 2.0365 0.967112 1.89953 1.33333 1.9H2V0.5H3.33333V1.9H8.66667V0.5H10V1.9H10.6667C11.0333 1.9 11.3473 2.0372 11.6087 2.3116C11.87 2.586 12.0004 2.91547 12 3.3V13.1C12 13.485 11.8693 13.8147 11.608 14.0891C11.3467 14.3635 11.0329 14.5005 10.6667 14.5H1.33333ZM1.33333 13.1H10.6667V6.1H1.33333V13.1ZM1.33333 4.7H10.6667V3.3H1.33333V4.7Z"
+                     fill="#2F0DFF" />
+               </svg>
+            </button>
+         </div>
+
+         <div class="span5" id="sandbox-container">
+            <div class="input-daterange input-group" id="datepicker">
+               <input type="text" class="input-sm form-control" name="start" />
+               <input
+                  type="text"
+                  class="input-sm form-control"
+                  id="datapicker"
+                  name="end" />
+            </div>
          </div>
       </div>
 
-      <div class="mt-5">
+      <div class="tab-back">
          <ul class="nav nav-tabs" id="statisticsTab" role="tablist">
             <li class="nav-item">
                <a
@@ -85,8 +108,7 @@
                class="tab-pane fade show active"
                id="partners"
                role="tabpanel"
-               aria-labelledby="partners-tab"
-            >
+               aria-labelledby="partners-tab">
                <div class="table-wrap">
                   <table class="table">
                      <tbody>
@@ -110,8 +132,7 @@
                class="tab-pane fade"
                id="invest"
                role="tabpanel"
-               aria-labelledby="invest-tab"
-            >
+               aria-labelledby="invest-tab">
                <div class="table-wrap">
                   <table class="table">
                      <tbody>
@@ -131,8 +152,7 @@
                class="tab-pane fade"
                id="depositWithdrawal"
                role="tabpanel"
-               aria-labelledby="depositWithdrawal-tab"
-            >
+               aria-labelledby="depositWithdrawal-tab">
                <div class="table-wrap">
                   <table class="table">
                      <tbody>
@@ -150,15 +170,25 @@
             </div>
          </div>
       </div>
+
+      <div class="statistic-problem">
+         <button
+            type="button"
+            id="problemsBtn"
+            class="btn btn-warning mt-4"
+            onclick="$('#problemModel').modal('show')">
+            Are you problems?
+         </button>
+      </div>
    </div>
 </div>
 
 <script>
    $('#statisticsTab #partners').tab('show');
 
-   $('#calendar .input-daterange').datepicker('clearDates');
+   $('#sandbox-container .input-daterange').datepicker('clearDates');
 
-   $('.filteers__settings-btn').on('click', function() {
+   $('#dateRange').on('click', function () {
       $('#datapicker').focus();
    });
 </script>
