@@ -1,4 +1,4 @@
-<div class="main-alerts">
+<div class="main-alerts partners">
    <div class="container">
       <h2 class="section-heading">Partners</h2>
       <div class="mt-5 partners-content">
@@ -199,4 +199,9 @@
    });
 
    $('#nav-tab #partners-tab').tab('show');
+
+   $('#playVideo').on('click', function () {
+      document.querySelector('.video').play();
+      $(this).hide();
+   });
 </script>
