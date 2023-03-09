@@ -74,7 +74,7 @@ gulp.task('watch', function(){
 //-------------------продакшен-------------------//
 
 gulp.task('img', function() {
-	return gulp.src('app/images/**/*') // Берем все изображения из app
+	return gulp.src('app/images/**/*.{jpg,jpeg,png,gif}') // Берем все изображения из app
 		.pipe(cache(imagemin({ // С кешированием
 			interlaced: true,
 			progressive: true,
@@ -104,6 +104,8 @@ gulp.task('prebuild', async function() {
 	var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
 	.pipe(gulp.dest('dist'));
 
+	var svgSprite = gulp.src('app/images/linck/*.svg')
+	.pipe(gulp.dest('dist/images/linck/'));
 
 });
 
