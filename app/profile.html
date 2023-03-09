@@ -138,13 +138,9 @@
 
             <div class="section-names">security</div>
 
-            <div class="custom-checkbox">
-               <input id="one" type="checkbox" />
-               <label for="one" class="custom-checkbox__lebel">
-                  <span></span>
-                  Google Authentication
-                  <ins><i class="checkbox-text">Google Authentication</i></ins>
-               </label>
+            <div class="beautiful-checkbox">
+               <input type="checkbox" id="GoogleAuth" class="beautiful-checkbox__control">
+               <label for="GoogleAuth" class="beautiful-checkbox__label">Google Authentication</label>
             </div>
 
             <div class="Authentication mb-3">
@@ -160,30 +156,23 @@
                <p>3. Succes</p>
             </div>
 
-            <div class="custom-checkbox">
-               <input id="emailVer" type="checkbox" />
-               <label for="emailVer">
-                  <span></span>
-                  Email verification
-                  <ins><i>Email verification</i></ins>
-               </label>
-
-               <div class="custom-checkbox-small mb-4 disabled">
-                  <input id="withdrawal" type="checkbox" disabled />
-                  <label for="withdrawal">
-                     <span></span>
-                     Withdrawal
-                     <ins><i>Withdrawal</i></ins>
-                  </label>
-
-                  <input id="tariffClosing" type="checkbox" disabled />
-                  <label for="tariffClosing">
-                     <span></span>
-                     Tariff closing
-                     <ins><i>Tariff closing</i></ins>
-                  </label>
-               </div>
+            <div class="beautiful-checkbox">
+               <input type="checkbox" id="emailVer" class="beautiful-checkbox__control">
+               <label for="emailVer" class="beautiful-checkbox__label">Email verification</label>
             </div>
+
+           <div class="subparagraph">
+               <div class="beautiful-checkbox">
+                  <input type="checkbox" id="withdrawal" class="beautiful-checkbox__control">
+                  <label for="withdrawal" class="beautiful-checkbox__label">Withdrawal</label>
+               </div>
+   
+               <div class="beautiful-checkbox">
+                  <input type="checkbox" id="tariffClosing" class="beautiful-checkbox__control">
+                  <label for="tariffClosing" class="beautiful-checkbox__label">Tariff closing</label>
+               </div>
+           </div>
+
 
             <button
                class="main-buttons  mb-5"
