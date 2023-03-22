@@ -366,13 +366,13 @@
                            <h5 class="card__title">$</h5>
                         </div>
                         <div class="card__body">
-                           <p class="card__sum">1,820</p>
-                           <img
+                           <p class="card__sum">100000000000,324</p>
+                           <!-- <img
                               src="images/card/trend.png"
                               class="card__img"
                               alt="progress"
                               width="106"
-                              height="69" />
+                              height="69" /> -->
                         </div>
                         <div class="card__footer">
                            <div class="card-balance__cell">
@@ -395,13 +395,13 @@
                            <h5 class="card__title">$</h5>
                         </div>
                         <div class="card__body">
-                           <p class="card__sum">1,120</p>
-                           <img
+                           <p class="card__sum">100000000000,120</p>
+                           <!-- <img
                               src="images/card/trend.png"
                               class="card__img"
                               alt="progress"
                               width="106"
-                              height="69" />
+                              height="69" /> -->
                         </div>
                         <div class="card__footer card-profit__footer">
                            <div class="card-profit__cell">
@@ -839,5 +839,20 @@
       </div>
 
       <script src="js/libs.min.js"></script>
+      <script>
+
+        $( ".card__sum" ).each(function() {
+            let summ = $( this ).html();
+
+            if(summ.length > 9) {
+               $(this).css({fontSize: '32px'});
+            }
+
+            if(summ.length > 12) {
+               $(this).css({fontSize: '24px'});
+            }
+
+         });
+      </script>
    </body>
 </html>
