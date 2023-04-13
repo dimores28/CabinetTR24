@@ -62,8 +62,11 @@
 
    .icon {
       stroke: #747089;
-      fill: #747089;
       transition: all .4s ease-out;
+   }
+
+   .icon-f {
+      fill: #747089;
    }
 
    &__item:hover .icon,
@@ -71,6 +74,13 @@
    &__item:active .icon,
    &__item.active .icon {
       stroke: #EB00FF;
+   }
+
+   &__item:hover .icon-f,
+   &__item:focus .icon-f,
+   &__item:active .icon-f,
+   &__item.active .icon-f {
+      fill: #EB00FF;
    }
    
 }
