@@ -21,8 +21,7 @@
    <body class="results-platform home">
       <div class="home_bg"></div>
       <div id="app">
-         <header
-         class="header">
+         <header class="header">
             <a href="#" class="header-lincks header-lincks_upp"
                >&#10229; Back to site</a
             >
@@ -52,8 +51,10 @@
                      >
                   </li>
                   <li class="nav-item header-nav__item header-nav__item_date">
-                     <a class="nav-link" href="#" >
-                        <span class="user-name"> UTC 13:56, Thursday 8 June</span>
+                     <a class="nav-link" href="#">
+                        <span class="user-name">
+                           UTC 13:56, Thursday 8 June</span
+                        >
                      </a>
                   </li>
                </ul>
@@ -63,18 +64,30 @@
          <aside class="aside">
             <div class="platforn-nav">
                <div class="platforn-nav__actions">
-                  <a href="platform-home.html" class="platforn-nav__linck platforn-nav__linck_white">Home</a>
-                  <a href="deals.html" class="platforn-nav__linck platforn-nav__linck_pinck">Deals</a>
+                  <a
+                     href="platform-home.html"
+                     class="platforn-nav__linck platforn-nav__linck_pinck"
+                     >Home</a
+                  >
+                  <a
+                     href="deals.html"
+                     class="platforn-nav__linck platforn-nav__linck_white"
+                     >Deals</a
+                  >
                </div>
                <a href="#" class="platforn-nav__help">
-                  <span>
-                     Need help
-                  </span>
+                  <span> Need help </span>
 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                     <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-                   </svg>
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="16"
+                     height="16"
+                     viewBox="0 0 16 16">
+                     <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                     <path
+                        d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                  </svg>
                </a>
             </div>
          </aside>
@@ -82,6 +95,89 @@
          <main class="main" id="main">
             <div class="container">
                <h2 class="platform-heading">Home</h2>
+
+               <div class="results">
+                  <div class="results__item results__item_pinck">
+                     <div class="results__block">
+                        <h3 class="results__title">
+                           Total volume of the company:
+                        </h3>
+                        <div class="results__summ">
+                           7 700 000 <span>usdt</span>
+                        </div>
+                     </div>
+                     <div class="results__img">
+                        <img src="images/card/trend.png" alt="trend icon" />
+                     </div>
+                  </div>
+
+                  <div class="results__item results__item_blue">
+                     <div class="results__block">
+                        <h3 class="results__title">
+                           Total volume of the company:
+                        </h3>
+
+                        <ul class="results__list">
+                           <li>Bybit</li>
+                           <li>Binance</li>
+                           <li>Coincex</li>
+                        </ul>
+                     </div>
+
+                     <button class="results__btn">More</button>
+                  </div>
+
+                  <div class="results__item results__item_grean">
+                     <h3 class="results__title">
+                        Total volume of the company:
+                     </h3>
+                     <div class="results__gilter-btn">
+                        <button class="results__btn">Week</button>
+                        <button class="results__btn">Month</button>
+                        <button class="results__btn">All the time</button>
+                     </div>
+
+                     <form class="results__form">
+                        <div class="results__form-group">
+                           <label for="from">From:</label>
+                           <input type="text" id="from" />
+                        </div>
+
+                        <div class="results__form-group">
+                           <label for="to">To:</label>
+                           <input type="text" id="to" />
+                        </div>
+
+                        <div class="results__form-group">
+                           <label for="month">Month:</label>
+                           <select name="month" id="month">
+                              <option value="January">January</option>
+                              <option value="February">February</option>
+                              <option value="March">March</option>
+                              <option value="April">April</option>
+                              <option value="May" selected>May</option>
+                              <option value="June">June</option>
+                              <option value="July">July</option>
+                              <option value="August">August</option>
+                              <option value="September">September</option>
+                              <option value="October">October</option>
+                              <option value="November">November</option>
+                              <option value="December">December</option>
+                           </select>
+                        </div>
+
+                        <button type="submit">Ok</button>
+                     </form>
+                  </div>
+
+                  <div class="results__item results__item_sky">
+                     <h3 class="results__title">Pairs we trade:</h3>
+                     <ul class="results__list">
+                        <li>BTS|USDT</li>
+                        <li>ETH|USDT</li>
+                     </ul>
+                  </div>
+               </div>
             </div>
          </main>
 
